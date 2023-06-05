@@ -1,5 +1,6 @@
 package Generic;
 
-public class BaseTest {
+public class BaseTest 
+{
 
 }
