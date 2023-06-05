@@ -23,7 +23,8 @@ public class BaseTest {
 	public static WebDriver driver;
 	public static Properties prop;
 
-public BaseTest (){
+public BaseTest ()
+{
 	prop = new Properties();
 	
 		String path=System.getProperty("user.dir")+"\\src\\test\\resources\\ConfigFile\\Config.properties";
@@ -39,7 +40,8 @@ public BaseTest (){
 		   e.printStackTrace();
 		}
   }
-public static void intialize() {
+public static void intialize() 
+{
 	String strBrowser = prop.getProperty("browser");
 	if(strBrowser.equalsIgnoreCase("chrome")) {
 		driver = new ChromeDriver();
