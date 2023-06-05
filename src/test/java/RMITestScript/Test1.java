@@ -11,13 +11,15 @@ public class Test1 extends BaseTest {
 	
 	
 	 @BeforeTest
-	 public void setup() { 
+	 public void setup() 
+	 { 
 	 intialize();
-	 
+	 //changes
 		
 	 }
 	@Test
-	  public void loginPage() {
+	  public void loginPage()
+	{
 		  login=new Login();
 		
 }
