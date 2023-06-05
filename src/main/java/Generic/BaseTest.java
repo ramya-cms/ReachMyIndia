@@ -104,6 +104,8 @@ public String readObjectPath(String objName) throws IOException {
  }
 public static void CloseBrowser() {
 	driver.close();
+	
+	
 }
 	
 }
