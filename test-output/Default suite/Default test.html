@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html>
 <head>
 <title>TestNG:  Default test</title>
@@ -84,6 +85,103 @@ Driver info: org.openqa.selenium.chrome.ChromeDriver
 Command: [e2f390c6ecdc4e7a37d6dbace6047ecf, get {url=https://rmi.cmsuat.co.in:2443/}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.90, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\RAMYAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62348}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62348/devtoo..., se:cdpVersion: 114.0.5735.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
 Session ID: e2f390c6ecdc4e7a37d6dbace6047ecf
+=======
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jun 08 10:58:53 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>67 seconds (67781 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='RMITestScript.Test1.loginPage()'><b>loginPage</b><br>Test class: RMITestScript.Test1<br/>
+<a href="#Output-1681730990" onClick='toggleBox("Output-1681730990", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1681730990" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1681730990">
+Path is valid<br/>
+Path is valid<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 25.000
+  (Session info: chrome=114.0.5735.90)
+Build info: version: &apos;4.8.2&apos;, revision: &apos;826dbfc730&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [84f3aae615d220ca5cc2a64deff23504, clickElement {id=17E24086E821A8EC08488615B3DC40F3_element_68}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.90, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\RAMYAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53582/devtoo..., se:cdpVersion: 114.0.5735.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (84f3aae615d220ca5cc2a64deff23504)] -&gt; xpath: //span[normalize-space()=&apos;Login&apos;]]
+Session ID: 84f3aae615d220ca5cc2a64deff23504
+>>>>>>> branch 'master' of https://github.com/ramya-cms/ReachMyIndia.git
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -130,6 +228,7 @@ Session ID: e2f390c6ecdc4e7a37d6dbace6047ecf
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<<<<<<< HEAD
 </pre></div><a href='#' onClick='toggleBox("stack-trace1871259950", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
 <div class='stack-trace' id='stack-trace1871259950'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 24.215
   (Session info: chrome=114.0.5735.90)
@@ -139,6 +238,18 @@ Driver info: org.openqa.selenium.chrome.ChromeDriver
 Command: [e2f390c6ecdc4e7a37d6dbace6047ecf, get {url=https://rmi.cmsuat.co.in:2443/}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.90, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\RAMYAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62348}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62348/devtoo..., se:cdpVersion: 114.0.5735.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
 Session ID: e2f390c6ecdc4e7a37d6dbace6047ecf
+=======
+</pre></div><a href='#' onClick='toggleBox("stack-trace1681730990", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1681730990'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 25.000
+  (Session info: chrome=114.0.5735.90)
+Build info: version: &apos;4.8.2&apos;, revision: &apos;826dbfc730&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [84f3aae615d220ca5cc2a64deff23504, clickElement {id=17E24086E821A8EC08488615B3DC40F3_element_68}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.90, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\RAMYAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53582/devtoo..., se:cdpVersion: 114.0.5735.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (84f3aae615d220ca5cc2a64deff23504)] -&gt; xpath: //span[normalize-space()=&apos;Login&apos;]]
+Session ID: 84f3aae615d220ca5cc2a64deff23504
+>>>>>>> branch 'master' of https://github.com/ramya-cms/ReachMyIndia.git
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -185,6 +296,7 @@ Session ID: e2f390c6ecdc4e7a37d6dbace6047ecf
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<<<<<<< HEAD
 </pre></div></td>
 <td>57</td>
 <td>RMITestScript.Test1@38cee291</td></tr>
@@ -412,4 +524,11 @@ Session ID: e2f390c6ecdc4e7a37d6dbace6047ecf
 <td>RMITestScript.Test1@38cee291</td></tr>
 </table><p>
 </body>
+=======
+</pre></div></td>
+<td>43</td>
+<td>RMITestScript.Test1@6221a451</td></tr>
+</table><p>
+</body>
+>>>>>>> branch 'master' of https://github.com/ramya-cms/ReachMyIndia.git
 </html>

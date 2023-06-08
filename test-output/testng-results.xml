@@ -8,20 +8,40 @@
       <![CDATA[Path is valid]]>
     </line>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2023-06-08T16:36:17 IST" name="Suite" finished-at="2023-06-08T16:37:06 IST" duration-ms="49300">
+=======
+  <suite started-at="2023-06-08T16:11:42 IST" name="Suite" finished-at="2023-06-08T16:12:32 IST" duration-ms="49479">
+>>>>>>> branch 'master' of https://github.com/ramya-cms/ReachMyIndia.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2023-06-08T16:36:17 IST" name="Test" finished-at="2023-06-08T16:37:06 IST" duration-ms="49300">
+=======
+    <test started-at="2023-06-08T16:11:42 IST" name="Test" finished-at="2023-06-08T16:12:32 IST" duration-ms="49479">
+>>>>>>> branch 'master' of https://github.com/ramya-cms/ReachMyIndia.git
       <class name="RMITestScript.Test1">
+<<<<<<< HEAD
         <test-method is-config="true" signature="setup()[pri:0, instance:RMITestScript.Test1@2e6a8155]" started-at="2023-06-08T16:36:17 IST" name="setup" finished-at="2023-06-08T16:36:34 IST" duration-ms="16529" status="PASS">
+=======
+        <test-method is-config="true" signature="setup()[pri:0, instance:RMITestScript.Test1@6221a451]" started-at="2023-06-08T16:11:42 IST" name="setup" finished-at="2023-06-08T16:11:57 IST" duration-ms="14866" status="PASS">
+>>>>>>> branch 'master' of https://github.com/ramya-cms/ReachMyIndia.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="initialize()[pri:0, instance:RMITestScript.Test1@2e6a8155]" started-at="2023-06-08T16:36:34 IST" name="initialize" finished-at="2023-06-08T16:36:43 IST" duration-ms="9715" status="PASS">
+=======
+        <test-method is-config="true" signature="initialize()[pri:0, instance:RMITestScript.Test1@6221a451]" started-at="2023-06-08T16:11:57 IST" name="initialize" finished-at="2023-06-08T16:12:11 IST" duration-ms="13758" status="PASS">
+>>>>>>> branch 'master' of https://github.com/ramya-cms/ReachMyIndia.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
+<<<<<<< HEAD
         <test-method signature="loginPage()[pri:0, instance:RMITestScript.Test1@2e6a8155]" started-at="2023-06-08T16:36:43 IST" name="loginPage" finished-at="2023-06-08T16:37:06 IST" duration-ms="22962" status="PASS">
+=======
+        <test-method signature="loginPage()[pri:0, instance:RMITestScript.Test1@6221a451]" started-at="2023-06-08T16:12:11 IST" name="loginPage" finished-at="2023-06-08T16:12:32 IST" duration-ms="20763" status="PASS">
+>>>>>>> branch 'master' of https://github.com/ramya-cms/ReachMyIndia.git
           <reporter-output>
             <line>
               <![CDATA[Path is valid]]>
