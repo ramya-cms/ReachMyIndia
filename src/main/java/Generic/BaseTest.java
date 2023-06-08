@@ -26,7 +26,7 @@ public class BaseTest implements Auto_Constant
 			PageFactory.initElements(driver, this);
 		}
 	
-		@BeforeMethod
+		@BeforeMethod(alwaysRun=true)
 		public void initialize() throws IOException  {
 			
 			String path=System.getProperty("user.dir")+"//src//test//resources//ConfigFile//Config.properties";
