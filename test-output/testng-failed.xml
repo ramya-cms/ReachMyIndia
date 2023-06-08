@@ -5,8 +5,9 @@
     <classes>
       <class name="RMITestScript.Test1">
         <methods>
-          <include name="addItemTest"/>
           <include name="setup"/>
+          <include name="loginPage"/>
+          <include name="initialize"/>
         </methods>
       </class> <!-- RMITestScript.Test1 -->
     </classes>
