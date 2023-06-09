@@ -8,20 +8,20 @@
       <![CDATA[Path is valid]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-06-08T16:11:42 IST" name="Suite" finished-at="2023-06-08T16:12:32 IST" duration-ms="49479">
+  <suite started-at="2023-06-09T15:35:28 IST" name="Default suite" finished-at="2023-06-09T15:37:05 IST" duration-ms="97167">
     <groups>
     </groups>
-    <test started-at="2023-06-08T16:11:42 IST" name="Test" finished-at="2023-06-08T16:12:32 IST" duration-ms="49479">
+    <test started-at="2023-06-09T15:35:28 IST" name="Default test" finished-at="2023-06-09T15:37:05 IST" duration-ms="97167">
       <class name="RMITestScript.Test1">
-        <test-method is-config="true" signature="setup()[pri:0, instance:RMITestScript.Test1@6221a451]" started-at="2023-06-08T16:11:42 IST" name="setup" finished-at="2023-06-08T16:11:57 IST" duration-ms="14866" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:RMITestScript.Test1@1e0b4072]" started-at="2023-06-09T15:35:28 IST" name="setup" finished-at="2023-06-09T15:36:07 IST" duration-ms="38868" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:RMITestScript.Test1@6221a451]" started-at="2023-06-08T16:11:57 IST" name="initialize" finished-at="2023-06-08T16:12:11 IST" duration-ms="13758" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:RMITestScript.Test1@1e0b4072]" started-at="2023-06-09T15:36:07 IST" name="initialize" finished-at="2023-06-09T15:36:17 IST" duration-ms="9707" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="loginPage()[pri:0, instance:RMITestScript.Test1@6221a451]" started-at="2023-06-08T16:12:11 IST" name="loginPage" finished-at="2023-06-08T16:12:32 IST" duration-ms="20763" status="PASS">
+        <test-method signature="loginPage()[pri:0, instance:RMITestScript.Test1@1e0b4072]" started-at="2023-06-09T15:36:17 IST" name="loginPage" finished-at="2023-06-09T15:37:05 IST" duration-ms="48458" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Path is valid]]>
@@ -32,6 +32,6 @@
           </reporter-output>
         </test-method> <!-- loginPage -->
       </class> <!-- RMITestScript.Test1 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
