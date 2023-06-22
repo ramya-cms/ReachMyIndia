@@ -7,7 +7,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -16,8 +15,8 @@ import Generic.Base_Page;
 
 public class Registration extends Base_Page {
 	
-	private WebDriver driver;
-    WebDriverWait wait; 
+//	private WebDriver driver;
+//    WebDriverWait wait; 
 	 
 	@FindBy(css=".signUpTop")
 	private WebElement regbtn;
@@ -51,42 +50,38 @@ public class Registration extends Base_Page {
 
 	  public Registration(WebDriver driver) 
 			{
-		        
-			    this.driver=driver;
-			    wait = new WebDriverWait(driver, Duration.ofSeconds(50));		
-			    PageFactory.initElements(driver, this);
+			  	this.driver=driver;
+				PageFactory.initElements(driver, this);
 				
 	}
 	public void Registration_page(String MobNum, String EmlID) throws InterruptedException {
 	
-		/*regbtn.click();
-		ckbox.click();
-		Rbutton.click();
-		wait.until(ExpectedConditions.visibilityOf(entrMovbileNum)).sendKeys(MobNum);
-		MOtpbtn.click();
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
-        wait.until(ExpectedConditions.elementToBeClickable(MOtp));
-		//new WebDriverWait(driver, Duration.ofSeconds(50)).until(ExpectedConditions.visibilityOf(MOtp)).click();
-		//wait.until(ExpectedConditions.visibilityOf(entrMovbileNum)).sendKeys(EmlID);
-		new WebDriverWait(driver, Duration.ofSeconds(50)).until(ExpectedConditions.visibilityOf(entrEmlId)).sendKeys(EmlID);
-		 emlOtpbtn.click();
-		 WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(50));
-	     wait1.until(ExpectedConditions.elementToBeClickable(EOtp));
-		//new WebDriverWait(driver, Duration.ofSeconds(50)).until(ExpectedConditions.visibilityOf(EOtp)).click();
-		ctn.click();*/
-		
 		regbtn.click();
 		ckbox.click();
 		Rbutton.click();
-		new WebDriverWait(driver, Duration.ofMinutes(2)).until(ExpectedConditions.visibilityOf(entrMovbileNum)).sendKeys(MobNum);
+		Thread.sleep(3000);
+		entrMovbileNum.sendKeys(MobNum);
 		MOtpbtn.click();
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(2));
-	    wait.until(ExpectedConditions.elementToBeClickable(MOtp));
-	    new WebDriverWait(driver, Duration.ofMinutes(2)).until(ExpectedConditions.visibilityOf(entrEmlId)).sendKeys(EmlID);
-	    emlOtpbtn.click();
-	    WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofMinutes(2));
-	    wait1.until(ExpectedConditions.elementToBeClickable(EOtp));
-	    ctn.click();
+		Thread.sleep(12000);
+		entrEmlId.sendKeys(EmlID);
+		emlOtpbtn.click();
+		Thread.sleep(12000);
+		ctn.click();
+		
+		/*new WebDriverWait(driver,Duration.ofSeconds(50)).until(ExpectedConditions.visibilityOf(entrMovbileNum)).sendKeys(MobNum);
+		MOtpbtn.click();
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		Thread.sleep(10000);
+		
+		//new WebDriverWait(driver, Duration.ofSeconds(50)).until(ExpectedConditions.visibilityOf(MOtp)).click();
+		new WebDriverWait(driver, Duration.ofSeconds(50)).until(ExpectedConditions.visibilityOf(entrEmlId)).sendKeys(EmlID);
+		emlOtpbtn.click();
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		Thread.sleep(10000);
+		//new WebDriverWait(driver, Duration.ofSeconds(50)).until(ExpectedConditions.visibilityOf(EOtp)).click();
+		ctn.click();*/
+		
+		
 	}
 	
 }

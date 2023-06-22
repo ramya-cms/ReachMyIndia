@@ -3,13 +3,25 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="RMITestScript.Registration_Test">
+=======
+      <class name="RMITestScript.Applicant_Details">
+>>>>>>> branch 'master' of https://github.com/Sakshi-CMS/ReachMyIndia.git
         <methods>
+<<<<<<< HEAD
           <include name="setup"/>
           <include name="RegPage"/>
+=======
+          <include name="form"/>
+>>>>>>> branch 'master' of https://github.com/Sakshi-CMS/ReachMyIndia.git
           <include name="initialize"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- RMITestScript.Registration_Test -->
+=======
+      </class> <!-- RMITestScript.Applicant_Details -->
+>>>>>>> branch 'master' of https://github.com/Sakshi-CMS/ReachMyIndia.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

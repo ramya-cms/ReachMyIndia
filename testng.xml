@@ -3,9 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
   <classes>
-  <class  name = "RMITestScript.Test1">
+  <class  name = "RMITestScript.Registration_Test"/>
+    <class  name = "RMITestScript.Applicant_Details"/>
   		
-  </class>
   </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

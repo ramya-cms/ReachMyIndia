@@ -12,17 +12,17 @@ import POM_Classes.Registration;
 public class Registration_Test  extends BaseTest {
  
 	
-	private Registration regis;
+	private static Registration regis;
 
 	@BeforeTest
-	public void setup() throws IOException, InterruptedException
+	public  void setup() throws IOException, InterruptedException
 	{	
 		initialize();
-		driver.close();
+		//driver.close();
 		
 	}
-	 @Test
-     public void RegPage() throws InterruptedException{
+	 @Test(priority=1)
+     public static void RegPage() throws InterruptedException{
 		    Thread.sleep(3000);
 			//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		    String Mbnum = Excel.Testdata(Path, "Sheet1", 4, 0);
