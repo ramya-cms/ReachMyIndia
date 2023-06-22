@@ -39,7 +39,6 @@ public class Reg_Form extends Base_Page {
 	@FindBy(xpath = "//select[@id='State']")
 	private WebElement state;
 
-	// @FindBy(xpath="//select[@id='District']")
 	@FindBy(how = How.XPATH, using = "//select[@id='District']")
 	private WebElement dist;
 
