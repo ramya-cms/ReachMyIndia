@@ -8,20 +8,20 @@
       <![CDATA[Path is valid]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-06-09T15:35:28 IST" name="Default suite" finished-at="2023-06-09T15:37:05 IST" duration-ms="97167">
+  <suite started-at="2023-06-21T12:23:35 IST" name="Default suite" finished-at="2023-06-21T12:24:13 IST" duration-ms="37315">
     <groups>
     </groups>
-    <test started-at="2023-06-09T15:35:28 IST" name="Default test" finished-at="2023-06-09T15:37:05 IST" duration-ms="97167">
-      <class name="RMITestScript.Test1">
-        <test-method is-config="true" signature="setup()[pri:0, instance:RMITestScript.Test1@1e0b4072]" started-at="2023-06-09T15:35:28 IST" name="setup" finished-at="2023-06-09T15:36:07 IST" duration-ms="38868" status="PASS">
+    <test started-at="2023-06-21T12:23:35 IST" name="Default test" finished-at="2023-06-21T12:24:13 IST" duration-ms="37315">
+      <class name="RMITestScript.Registration_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:RMITestScript.Registration_Test@a38c7fe]" started-at="2023-06-21T12:23:35 IST" name="setup" finished-at="2023-06-21T12:23:47 IST" duration-ms="11898" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:RMITestScript.Test1@1e0b4072]" started-at="2023-06-09T15:36:07 IST" name="initialize" finished-at="2023-06-09T15:36:17 IST" duration-ms="9707" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:RMITestScript.Registration_Test@a38c7fe]" started-at="2023-06-21T12:23:47 IST" name="initialize" finished-at="2023-06-21T12:23:56 IST" duration-ms="8287" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="loginPage()[pri:0, instance:RMITestScript.Test1@1e0b4072]" started-at="2023-06-09T15:36:17 IST" name="loginPage" finished-at="2023-06-09T15:37:05 IST" duration-ms="48458" status="PASS">
+        <test-method signature="RegPage()[pri:0, instance:RMITestScript.Registration_Test@a38c7fe]" started-at="2023-06-21T12:23:56 IST" name="RegPage" finished-at="2023-06-21T12:24:13 IST" duration-ms="17052" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Path is valid]]>
@@ -30,8 +30,8 @@
               <![CDATA[Path is valid]]>
             </line>
           </reporter-output>
-        </test-method> <!-- loginPage -->
-      </class> <!-- RMITestScript.Test1 -->
+        </test-method> <!-- RegPage -->
+      </class> <!-- RMITestScript.Registration_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
