@@ -15,8 +15,8 @@ import Generic.Base_Page;
 
 public class Registration extends Base_Page {
 	
-	private WebDriver driver;
-    WebDriverWait wait; 
+//	private WebDriver driver;
+//    WebDriverWait wait; 
 	 
 	@FindBy(css=".signUpTop")
 	private WebElement regbtn;
@@ -59,17 +59,27 @@ public class Registration extends Base_Page {
 		regbtn.click();
 		ckbox.click();
 		Rbutton.click();
-		new WebDriverWait(driver,Duration.ofSeconds(50)).until(ExpectedConditions.visibilityOf(entrMovbileNum)).sendKeys(MobNum);
+		Thread.sleep(3000);
+		entrMovbileNum.sendKeys(MobNum);
 		MOtpbtn.click();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-		//Thread.sleep(8000);
+		Thread.sleep(12000);
+		entrEmlId.sendKeys(EmlID);
+		emlOtpbtn.click();
+		Thread.sleep(12000);
+		ctn.click();
+		
+		/*new WebDriverWait(driver,Duration.ofSeconds(50)).until(ExpectedConditions.visibilityOf(entrMovbileNum)).sendKeys(MobNum);
+		MOtpbtn.click();
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		Thread.sleep(10000);
+		
 		//new WebDriverWait(driver, Duration.ofSeconds(50)).until(ExpectedConditions.visibilityOf(MOtp)).click();
 		new WebDriverWait(driver, Duration.ofSeconds(50)).until(ExpectedConditions.visibilityOf(entrEmlId)).sendKeys(EmlID);
 		emlOtpbtn.click();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		//Thread.sleep(8000);
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		Thread.sleep(10000);
 		//new WebDriverWait(driver, Duration.ofSeconds(50)).until(ExpectedConditions.visibilityOf(EOtp)).click();
-		ctn.click();
+		ctn.click();*/
 		
 		
 	}

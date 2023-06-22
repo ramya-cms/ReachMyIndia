@@ -11,7 +11,7 @@ import org.testng.Assert;
 import org.testng.Reporter;
 
 public class Base_Page {
- WebDriver driver;
+ protected WebDriver driver;
 
 //	public Base_Page(WebDriver driver) {
 //		// super();
