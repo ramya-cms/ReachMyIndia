@@ -13,12 +13,6 @@ import org.testng.Reporter;
 public class Base_Page {
  protected WebDriver driver;
 
-//	public Base_Page(WebDriver driver) {
-//		// super();
-//		//this.driver = driver;
-//		PageFactory.initElements(driver, this);
-//	}
-
 	public void verifytitle(String Title) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		try {

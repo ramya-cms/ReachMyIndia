@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -56,8 +58,16 @@ public class BaseTest implements Auto_Constant
 		driver.get(prop.getProperty("url"));
 	}
 	
-	
-	
+	/*
+	 * @AfterMethod() public void tearDownMethod(ITestResult result) throws
+	 * IOException, InterruptedException {
+	 * 
+	 * if(result.getStatus()==ITestResult.FAILURE) { ScreenShot.screenshotFailure();
+	 * }
+	 * 
+	 * }
+	 */
+		   
 //	@AfterClass
 //	public void closeBrowser() {
 //		 driver.close();

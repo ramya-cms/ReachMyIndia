@@ -14,7 +14,7 @@ public class Applicant_Details extends BaseTest
 	private static Reg_Form appdtls;
 	
 	@Test(priority=2)
-	public static void form() throws InterruptedException
+	public static void form() throws InterruptedException, IOException
 	{
 			
 		String name = Excel.Testdata(Path, "Sheet1", 8, 0);
@@ -26,6 +26,9 @@ public class Applicant_Details extends BaseTest
 		appdtls=new Reg_Form(driver);
 		Thread.sleep(1000);
 		appdtls.details(name, pan, paddr, pcode);
+		Reg_Form.Screenshot();
+		
+		
 		
 	}
 }

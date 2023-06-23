@@ -1,7 +1,8 @@
 package RMITestScript;
 
 import java.io.IOException;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriver;import org.testng.ITestResult;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -33,7 +34,8 @@ public class Registration_Test  extends BaseTest {
 		     Thread.sleep(1000);
 		     regis.Registration_page(Mbnum,EIDnum);
 		    }
-		   
+		
+
 	}
 
  

@@ -5,6 +5,7 @@
     <classes>
       <class name="RMITestScript.Applicant_Details">
         <methods>
+          <include name="tearDownMethod"/>
           <include name="form"/>
           <include name="initialize"/>
         </methods>
@@ -12,6 +13,7 @@
       <class name="RMITestScript.Registration_Test">
         <methods>
           <include name="setup"/>
+          <include name="tearDownMethod"/>
           <include name="RegPage"/>
           <include name="initialize"/>
         </methods>
