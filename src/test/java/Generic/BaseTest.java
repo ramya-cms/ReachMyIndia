@@ -1,5 +1,6 @@
 package Generic;
 
+
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -14,6 +15,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 
+
 import java.io.File;
 import java.io.FileInputStream;
 
@@ -26,6 +28,7 @@ public class BaseTest implements Auto_Constant {
 
 	public static WebDriver driver;
 	public Properties prop;
+
 
 	public BaseTest() {
 		// this.driver=driver;
@@ -57,7 +60,8 @@ public class BaseTest implements Auto_Constant {
 		driver.get(prop.getProperty("url"));
 	}
 
-	
+
+
     @AfterMethod(alwaysRun = true)
    	public String getScreenshot(WebDriver driver, String testCaseName) throws IOException 
     {

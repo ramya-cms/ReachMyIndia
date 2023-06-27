@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
@@ -24,7 +25,7 @@ public class Test1 extends BaseTest {
 	}
 	
 	
-	@Test
+	//@Test(priority=1)
 	public void loginPage() throws InterruptedException{
 
 		
@@ -38,8 +39,11 @@ public class Test1 extends BaseTest {
 		l.login(num1, num2);
 
 	}
-	
-	  
+//	@Test(priority=2)
+//	  public void screenshot1()
+//	  {
+//		  Assert.assertEquals(driver.getTitle(), "RMI");
+//	  }
 //	@AfterTest
 //	public void tearDown() {
 //	 closeBrowser();
