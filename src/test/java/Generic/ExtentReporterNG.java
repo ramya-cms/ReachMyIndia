@@ -1,3 +1,4 @@
+
 package Generic;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -19,3 +20,4 @@ public class ExtentReporterNG implements Auto_Constant
 		return extent;
 	}
 }
+

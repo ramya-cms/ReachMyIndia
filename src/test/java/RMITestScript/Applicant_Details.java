@@ -24,7 +24,5 @@ public class Applicant_Details extends BaseTest
 		
 		
 		
-		
-		
 	}
 }

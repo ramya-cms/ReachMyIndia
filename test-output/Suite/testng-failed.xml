@@ -13,14 +13,6 @@
           <include name="initialize"/>
         </methods>
       </class> <!-- RMITestScript.Applicant_Details -->
-      <class name="RMITestScript.Registration_Test">
-        <methods>
-          <include name="setup"/>
-          <include name="getScreenshot"/>
-          <include name="RegPage"/>
-          <include name="initialize"/>
-        </methods>
-      </class> <!-- RMITestScript.Registration_Test -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
