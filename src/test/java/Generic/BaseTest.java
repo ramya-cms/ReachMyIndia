@@ -10,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 
@@ -70,10 +71,15 @@ public class BaseTest implements Auto_Constant {
      }
 
 
-// @AfterClass
-//     public void closeBrowser() {
-//	 driver.close();
- }
+    @AfterSuite
+	public void tearDown() {
+		driver.close();
+		if (driver != null) {
+			driver.quit();
+			
+		}
+    }
+}
 
 
 
