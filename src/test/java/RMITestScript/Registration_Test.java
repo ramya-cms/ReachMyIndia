@@ -1,15 +1,14 @@
 package RMITestScript;
 
 import java.io.IOException;
-import org.openqa.selenium.WebDriver;import org.testng.ITestResult;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
 import Generic.BaseTest;
 import Generic.Excel;
 import POM_Classes.Registration;
 
+//@Listeners(ScreenShot.TestNGListeners.class)
 public class Registration_Test  extends BaseTest {
  
 	
@@ -19,6 +18,7 @@ public class Registration_Test  extends BaseTest {
 	public  void setup() throws IOException, InterruptedException
 	{	
 		initialize();
+		//TakeScreenShot ts=new TakeScreenShot(driver);
 		//driver.close();
 		
 	}

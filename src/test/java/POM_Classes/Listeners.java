@@ -45,11 +45,8 @@ public class Listeners extends BaseTest implements ITestListener
 	    	String filePath=null;
 			try {
 				
-					filePath = getScreenshot(result.getMethod().getMethodName(),driver);
+					filePath = getScreenshot(driver,result.getMethod().getMethodName());
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
