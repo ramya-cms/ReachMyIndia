@@ -26,7 +26,7 @@ public class Applicant_Details extends BaseTest
 		appdtls=new Reg_Form(driver);
 		Thread.sleep(1000);
 		appdtls.details(name, pan, paddr, pcode);
-		Reg_Form.Screenshot();
+		//Reg_Form.Screenshot();
 		
 		
 		

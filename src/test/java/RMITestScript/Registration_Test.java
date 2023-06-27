@@ -35,7 +35,7 @@ public class Registration_Test  extends BaseTest {
 		     regis.Registration_page(Mbnum,EIDnum);
 		    }
 		
-
+	 
 	}
 
  
