@@ -27,7 +27,6 @@ public class Test1 extends BaseTest {
 	
 	//@Test(priority=1)
 	public void loginPage() throws InterruptedException{
-
 		
 		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		Thread.sleep(2000);
