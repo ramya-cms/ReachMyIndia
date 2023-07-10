@@ -9,6 +9,7 @@
       <class name="RMITestScript.Applicant_Details">
         <methods>
           <include name="getScreenshot"/>
+          <include name="tearDown"/>
           <include name="form"/>
           <include name="initialize"/>
         </methods>

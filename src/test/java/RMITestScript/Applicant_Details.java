@@ -20,7 +20,7 @@ public class Applicant_Details extends BaseTest
 		Thread.sleep(1000);
 		appdtls=new Reg_Form(driver);
 		Thread.sleep(1000);
-		appdtls.details(name, pan, paddr, pcode);
+		appdtls.details(name, pan,"10","Mar","2000", paddr, pcode);
 		
 		
 		

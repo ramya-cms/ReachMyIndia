@@ -10,6 +10,7 @@ import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.poi.hpsf.Date;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -38,11 +39,20 @@ public class Reg_Form extends Base_Page implements Auto_Constant {
 	@FindBy(id = "PanCardNumber")
 	private WebElement Pan;
 
-	@FindBy(xpath = "//input[@id='DateOfBirth']")
+	@FindBy(id = "DateOfBirth")
 	private WebElement dob;
-
-	@FindBy(xpath = "//td[@class='day weekend'][normalize-space()='2']")
-	private WebElement date;
+	
+	@FindBy(className = "datepicker-decades")
+	private WebElement decades;
+	
+     @FindBy(className = "datepicker-years")
+	 private WebElement yearDropdown;
+	 
+     @FindBy(className = "datepicker-months")
+     private WebElement monthDropdown;
+		  
+	 @FindBy(className="datepicker-days")
+	 private WebElement dayOne;  
 
 	@FindBy(xpath = "//select[@id='Gender']")
 	private WebElement gen;
@@ -75,7 +85,7 @@ public class Reg_Form extends Base_Page implements Auto_Constant {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void details(String aname, String pan, String paddr, String pincde)
+	public void details(String aname, String pan, String paddr, String pincde, String day,String month, String year)
 			throws InterruptedException, IOException {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
@@ -85,7 +95,17 @@ public class Reg_Form extends Base_Page implements Auto_Constant {
 		new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(Pan)).sendKeys(pan);
 
 		dob.click();
-		date.click();
+		new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("form-control valid")));
+	    decades.click();
+			
+	   Select yearSelect = new Select(yearDropdown);
+	   yearSelect.selectByVisibleText(year);
+	   
+	   Select monthSelect = new Select(monthDropdown);
+	   monthSelect.selectByVisibleText(month);
+			 
+	   dayOne.click();
+			 
 
 		Select sel = new Select(gen);
 		sel.selectByIndex(1);
