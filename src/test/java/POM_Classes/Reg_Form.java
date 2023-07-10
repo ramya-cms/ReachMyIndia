@@ -38,21 +38,9 @@ public class Reg_Form extends Base_Page implements Auto_Constant {
 
 	@FindBy(id = "PanCardNumber")
 	private WebElement Pan;
-
+	
 	@FindBy(id = "DateOfBirth")
-	private WebElement dob;
-	
-	@FindBy(className = "datepicker-decades")
-	private WebElement decades;
-	
-     @FindBy(className = "datepicker-years")
-	 private WebElement yearDropdown;
-	 
-     @FindBy(className = "datepicker-months")
-     private WebElement monthDropdown;
-		  
-	 @FindBy(className="datepicker-days")
-	 private WebElement dayOne;  
+	private WebElement Dob;
 
 	@FindBy(xpath = "//select[@id='Gender']")
 	private WebElement gen;
@@ -84,8 +72,8 @@ public class Reg_Form extends Base_Page implements Auto_Constant {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
+	public void details(String aname, String pan, String dob, String paddr, String pincde)
 
-	public void details(String aname, String pan, String paddr, String pincde, String day,String month, String year)
 			throws InterruptedException, IOException {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
@@ -93,20 +81,9 @@ public class Reg_Form extends Base_Page implements Auto_Constant {
 				.sendKeys(aname);
 
 		new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(Pan)).sendKeys(pan);
-
-		dob.click();
-		new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("form-control valid")));
-	    decades.click();
-			
-	   Select yearSelect = new Select(yearDropdown);
-	   yearSelect.selectByVisibleText(year);
-	   
-	   Select monthSelect = new Select(monthDropdown);
-	   monthSelect.selectByVisibleText(month);
+		new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(Dob)).sendKeys(dob);	 
+	  
 			 
-	   dayOne.click();
-			 
-
 		Select sel = new Select(gen);
 		sel.selectByIndex(1);
 

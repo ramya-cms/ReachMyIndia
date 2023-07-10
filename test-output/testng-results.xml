@@ -19,21 +19,44 @@
     <line>
       <![CDATA[Path is valid]]>
     </line>
+    <line>
+      <![CDATA[Path is valid]]>
+    </line>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2023-07-10T15:08:24 IST" name="Suite" finished-at="2023-07-10T15:09:30 IST" duration-ms="65980">
+=======
+  <suite started-at="2023-07-10T15:46:28 IST" name="Suite" finished-at="2023-07-10T15:48:08 IST" duration-ms="99929">
+>>>>>>> branch 'master' of https://github.com/Sakshi-CMS/ReachMyIndia.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2023-07-10T15:08:24 IST" name="Test" finished-at="2023-07-10T15:09:30 IST" duration-ms="65980">
+=======
+    <test started-at="2023-07-10T15:46:28 IST" name="Test" finished-at="2023-07-10T15:48:08 IST" duration-ms="99929">
+>>>>>>> branch 'master' of https://github.com/Sakshi-CMS/ReachMyIndia.git
       <class name="RMITestScript.Registration_Test">
+<<<<<<< HEAD
         <test-method is-config="true" signature="initialize()[pri:0, instance:RMITestScript.Registration_Test@484094a5]" started-at="2023-07-10T15:08:14 IST" name="initialize" finished-at="2023-07-10T15:08:24 IST" duration-ms="9300" status="PASS">
+=======
+        <test-method is-config="true" signature="initialize()[pri:0, instance:RMITestScript.Registration_Test@5a755cc1]" started-at="2023-07-10T15:46:13 IST" name="initialize" finished-at="2023-07-10T15:46:28 IST" duration-ms="15174" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Sakshi-CMS/ReachMyIndia.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="setup()[pri:0, instance:RMITestScript.Registration_Test@484094a5]" started-at="2023-07-10T15:08:24 IST" name="setup" finished-at="2023-07-10T15:08:32 IST" duration-ms="8736" status="PASS">
+=======
+        <test-method is-config="true" signature="setup()[pri:0, instance:RMITestScript.Registration_Test@5a755cc1]" started-at="2023-07-10T15:46:28 IST" name="setup" finished-at="2023-07-10T15:46:35 IST" duration-ms="6546" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Sakshi-CMS/ReachMyIndia.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
+<<<<<<< HEAD
         <test-method signature="RegPage()[pri:1, instance:RMITestScript.Registration_Test@484094a5]" started-at="2023-07-10T15:08:32 IST" name="RegPage" finished-at="2023-07-10T15:09:26 IST" duration-ms="53699" status="PASS">
+=======
+        <test-method signature="RegPage()[pri:1, instance:RMITestScript.Registration_Test@5a755cc1]" started-at="2023-07-10T15:46:35 IST" name="RegPage" finished-at="2023-07-10T15:47:14 IST" duration-ms="39689" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Sakshi-CMS/ReachMyIndia.git
           <reporter-output>
             <line>
               <![CDATA[Path is valid]]>
@@ -43,7 +66,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- RegPage -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="getScreenshot(org.openqa.selenium.WebDriver,java.lang.String)[pri:0, instance:RMITestScript.Registration_Test@484094a5]" started-at="2023-07-10T15:09:26 IST" name="getScreenshot" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1688981966698" status="FAIL">
+=======
+        <test-method is-config="true" signature="getScreenshot(org.openqa.selenium.WebDriver,java.lang.String)[pri:0, instance:RMITestScript.Registration_Test@5a755cc1]" started-at="2023-07-10T15:47:14 IST" name="getScreenshot" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1688984234847" status="FAIL">
+>>>>>>> branch 'master' of https://github.com/Sakshi-CMS/ReachMyIndia.git
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
@@ -96,16 +123,34 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- tearDown -->
       </class> <!-- RMITestScript.Registration_Test -->
       <class name="RMITestScript.Applicant_Details">
+<<<<<<< HEAD
         <test-method signature="form()[pri:2, instance:RMITestScript.Applicant_Details@76f4b65]" started-at="2023-07-10T15:09:26 IST" name="form" finished-at="2023-07-10T15:09:29 IST" duration-ms="3186" status="FAIL">
           <exception class="org.openqa.selenium.InvalidSelectorException">
+=======
+        <test-method signature="form()[pri:2, instance:RMITestScript.Applicant_Details@32c726ee]" started-at="2023-07-10T15:47:14 IST" name="form" finished-at="2023-07-10T15:48:08 IST" duration-ms="53355" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+>>>>>>> branch 'master' of https://github.com/Sakshi-CMS/ReachMyIndia.git
             <message>
+<<<<<<< HEAD
               <![CDATA[Compound class names not permitted
 For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: '4.8.2', revision: '826dbfc730'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: driver.version: unknown]]>
+=======
+              <![CDATA[timeout: Timed out receiving message from renderer: 25.000
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6f7b0a79887a334396fc5889b2d03ef2, clickElement {id=CFFCB9942DAA8F0C7AABDA19631FAF4E_element_155}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\RAMYAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56826}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56826/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (6f7b0a79887a334396fc5889b2d03ef2)] -> xpath: //input[@id='btnRegistration']]
+Session ID: 6f7b0a79887a334396fc5889b2d03ef2]]>
+>>>>>>> branch 'master' of https://github.com/Sakshi-CMS/ReachMyIndia.git
             </message>
             <full-stacktrace>
+<<<<<<< HEAD
               <![CDATA[org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
 For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: '4.8.2', revision: '826dbfc730'
@@ -115,6 +160,39 @@ at org.openqa.selenium.By$ByClassName.<init>(By.java:310)
 at org.openqa.selenium.By.className(By.java:100)
 at POM_Classes.Reg_Form.details(Reg_Form.java:98)
 at RMITestScript.Applicant_Details.form(Applicant_Details.java:23)
+=======
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 25.000
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6f7b0a79887a334396fc5889b2d03ef2, clickElement {id=CFFCB9942DAA8F0C7AABDA19631FAF4E_element_155}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\RAMYAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56826}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56826/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (6f7b0a79887a334396fc5889b2d03ef2)] -> xpath: //input[@id='btnRegistration']]
+Session ID: 6f7b0a79887a334396fc5889b2d03ef2
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at POM_Classes.Reg_Form.details(Reg_Form.java:135)
+at RMITestScript.Applicant_Details.form(Applicant_Details.java:24)
+>>>>>>> branch 'master' of https://github.com/Sakshi-CMS/ReachMyIndia.git
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -159,9 +237,16 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <line>
               <![CDATA[Path is valid]]>
             </line>
+            <line>
+              <![CDATA[Path is valid]]>
+            </line>
           </reporter-output>
         </test-method> <!-- form -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="getScreenshot(org.openqa.selenium.WebDriver,java.lang.String)[pri:0, instance:RMITestScript.Applicant_Details@76f4b65]" started-at="2023-07-10T15:09:30 IST" name="getScreenshot" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1688981970171" status="FAIL">
+=======
+        <test-method is-config="true" signature="getScreenshot(org.openqa.selenium.WebDriver,java.lang.String)[pri:0, instance:RMITestScript.Applicant_Details@32c726ee]" started-at="2023-07-10T15:48:08 IST" name="getScreenshot" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1688984288419" status="FAIL">
+>>>>>>> branch 'master' of https://github.com/Sakshi-CMS/ReachMyIndia.git
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[

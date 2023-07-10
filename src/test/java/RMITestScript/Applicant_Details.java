@@ -15,12 +15,14 @@ public class Applicant_Details extends BaseTest
 			
 		String name = Excel.Testdata(Path, "Sheet1", 8, 0);
 		String pan =  Excel.Testdata(Path, "Sheet1", 8, 1);
+		String dob = Excel.Testdata(Path, "Sheet1", 8, 2);
 		String paddr = Excel.Testdata(Path, "Sheet1", 8, 3);
 		String pcode = Excel.Testdata(Path, "Sheet1", 8, 4);
 		Thread.sleep(1000);
 		appdtls=new Reg_Form(driver);
 		Thread.sleep(1000);
-		appdtls.details(name, pan,"10","Mar","2000", paddr, pcode);
+		appdtls.details(name, pan,dob, paddr, pcode);
+
 		
 		
 		
