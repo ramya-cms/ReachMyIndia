@@ -1,0 +1,14 @@
+[DEBUG] 2023-07-11 16:14:38.327 [main] Test1 - Browser gt launch
+[DEBUG] 2023-07-11 16:14:43.929 [main] Test1 - Browser got launch
+[DEBUG] 2023-07-11 16:14:43.929 [main] Test1 - Navigated to application URL
+[DEBUG] 2023-07-11 16:15:39.278 [main] Test1 - Browser gt launch
+[DEBUG] 2023-07-11 16:15:45.403 [main] Test1 - Browser got launch
+[DEBUG] 2023-07-11 16:15:45.403 [main] Test1 - Navigated to application URL
+[DEBUG] 2023-07-11 16:16:12.051 [main] Test1 - Username And Password got entered
+[DEBUG] 2023-07-11 16:16:12.051 [main] Test1 - Login Successfully!
+[DEBUG] 2023-07-11 16:23:54.065 [main] Test1 - Navigated to application URL
+[DEBUG] 2023-07-11 16:24:09.886 [main] Test1 - Username And Password got entered
+[DEBUG] 2023-07-11 16:24:09.886 [main] Test1 - Login Successfully!
+[DEBUG] 2023-07-11 16:26:22.525 [main] Test1 - Navigated to application URL
+[DEBUG] 2023-07-11 16:26:38.168 [main] Test1 - Username And Password got entered
+[DEBUG] 2023-07-11 16:26:38.169 [main] Test1 - Login Successfully!

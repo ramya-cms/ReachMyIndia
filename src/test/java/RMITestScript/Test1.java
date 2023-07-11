@@ -1,12 +1,8 @@
 package RMITestScript;
 
 import java.io.IOException;
-import java.time.Duration;
-import java.util.Properties;
-
-import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -16,18 +12,23 @@ import POM_Classes.Login;
 
 public class Test1 extends BaseTest {
 
+	public static Logger log;
+	
 	@BeforeTest
 	public void setup() throws IOException
 	{	
-		initialize();
-		driver.close();
+		log=LogManager.getLogger(Test1.class.getName());
+		//initialize();
+		//log.debug("Browser got launch");
+		
+		//.close();
 		
 	}
 	
 	
-	//@Test(priority=1)
+	@Test(priority=1)
 	public void loginPage() throws InterruptedException{
-		
+		//log=LogManager.getLogger(Test1.class);
 		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		Thread.sleep(2000);
 		String num1 = Excel.Testdata(Path, "Sheet1", 0, 0);
@@ -35,7 +36,12 @@ public class Test1 extends BaseTest {
 
 		Login l = new Login(driver);
 		Thread.sleep(2000);
+		log.debug("Navigated to application URL");
 		l.login(num1, num2);
+		log.debug("Username And Password got entered");
+		log.debug("Login Successfully!");
+		
+		
 
 	}
 //	@Test(priority=2)

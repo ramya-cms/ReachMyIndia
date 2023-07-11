@@ -7,6 +7,7 @@ public interface Auto_Constant {
 	String SFolderpath=System.getProperty("user.dir")+"//ScreenShot//RMI";
 
 	String rpath = System.getProperty("user.dir")+"//ExtentReports";
+	//String PrintLogPath = System.getProperty("user.dir") + "//logs//prints.log";
 
 	
 }
