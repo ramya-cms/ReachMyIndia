@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>D:\Eclipse2021-09 Workspace\Seleneium_Tranning\ReachMyIndia\testng2.xml</span>
+                    <span>D:\Selenium\ReachMyIndia\testng2.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,  1 skipped,  </span>
+                    <span class="method-stats">2 methods,  1 skipped,  1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -104,10 +104,24 @@
                     <div class="method-list-content skipped suite-Suite">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="RMITestScript.Test1" class="method navigator-link" hash-for-method="loginPage">loginPage</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="RMITestScript.Test1" class="method navigator-link" hash-for-method="loginPage(Failure)">loginPage(Failure)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="RMITestScript.Test1" class="method navigator-link" hash-for-method="loginPage(Success)">loginPage(Success)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -127,36 +141,40 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginPage">
-                  </a> <!-- loginPage -->
+                  <a name="loginPage(Failure)">
+                  </a> <!-- loginPage(Failure) -->
                   <span class="method-name">loginPage</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 24.587
-  (Session info: chrome=114.0.5735.199)
-Build info: version: &apos;4.8.2&apos;, revision: &apos;826dbfc730&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [18e4a3784504ef3778899c6a771c13a6, get {url=https://rmi.cmsuat.co.in:2443/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\SAKSHI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55307}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55307/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 18e4a3784504ef3778899c6a771c13a6
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
-	at Generic.BaseTest.initialize(BaseTest.java:64)
-... Removed 24 stack frames
+                  <span class="parameters">(Failure)</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Can inject only one of &lt;ITestContext, XmlTest, Method, Object[], ITestResult&gt; into a @AfterMethod annotated getScreenshot.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">RMITestScript.Test1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPage(Success)">
+                  </a> <!-- loginPage(Success) -->
+                  <span class="method-name">loginPage</span>
+                  <span class="parameters">(Success)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Eclipse2021-09 Workspace\Seleneium_Tranning\ReachMyIndia\testng2.xml</span>
+            <span class="header-content">D:\Selenium\ReachMyIndia\testng2.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -208,16 +226,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginPage')
 data.setCell(0, 2, 'RMITestScript.Test1')
-data.setCell(0, 3, 0);
+data.setCell(0, 3, 32467);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginPage')
+data.setCell(1, 2, 'RMITestScript.Test1')
+data.setCell(1, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 32 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -228,6 +250,13 @@ return data;
             <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">loginPage(Success)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Path is valid</span>
+                <span class="reporter-method-output">Path is valid</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
@@ -245,18 +274,20 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">RMITestScript.Test1</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">initialize</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">31950 ms</span>
+                <span class="method-start">18605 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">loginPage</span>
-                <span class="method-start">32005 ms</span>
+                <span class="method-name">loginPage(Success)</span>
+                <span class="method-start">18630 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginPage(Failure)</span>
+                <span class="method-start">51107 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

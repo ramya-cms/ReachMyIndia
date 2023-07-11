@@ -3,12 +3,15 @@ package RMITestScript;
 import java.io.IOException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import Generic.BaseTest;
 import Generic.Excel;
 import POM_Classes.Login;
+import POM_Classes.Services;
 
 public class Test1 extends BaseTest {
 
@@ -17,19 +20,15 @@ public class Test1 extends BaseTest {
 	@BeforeTest
 	public void setup() throws IOException
 	{	
+
 		log=LogManager.getLogger(Test1.class.getName());
-		//initialize();
-		//log.debug("Browser got launch");
-		
-		//.close();
 		
 	}
 	
 	
-	@Test(priority=1)
-	public void loginPage() throws InterruptedException{
-		//log=LogManager.getLogger(Test1.class);
-		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+	@Test(priority=1,dataProvider="getLoginData")
+	public void loginPage(String expectedResult) throws IOException, InterruptedException{
+		
 		Thread.sleep(2000);
 		String num1 = Excel.Testdata(Path, "Sheet1", 0, 0);
 		String num2 = Excel.Testdata(Path, "Sheet1", 0, 1);
@@ -42,13 +41,44 @@ public class Test1 extends BaseTest {
 		log.debug("Login Successfully!");
 		
 		
-
+		Services serv = new Services(driver);
+		String actualResult = null;
+		
+		try 
+		{
+			
+		if(serv.Serv().isDisplayed())
+		{
+			 log.debug("User got logged in");
+			   actualResult = "Success";
+		}
+		}catch(Exception e)
+		{
+			log.debug("User didn't log in");
+			actualResult = "Failure";
+		}
+		
+		
+		if(actualResult.equals(expectedResult))
+		{
+			log.info("Login Test got passed");
+			Assert.assertEquals(actualResult, expectedResult);
+			
+		}else {
+			log.error("Login Test got failed");
+		} 
+		
+			
 	}
-//	@Test(priority=2)
-//	  public void screenshot1()
-//	  {
-//		  Assert.assertEquals(driver.getTitle(), "RMI");
-//	  }
+	
+	
+	@DataProvider
+	public Object[][] getLoginData() {
+		Object[][] data = {{"Success"},{"Failure"}};
+		return data;
+	}
+	
+	
 //	@AfterTest
 //	public void tearDown() {
 //	 closeBrowser();
