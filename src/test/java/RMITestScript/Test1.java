@@ -20,7 +20,7 @@ public class Test1 extends BaseTest {
 	public void setup() throws IOException
 	{	
 		initialize();
-		driver.close();
+		//driver.close();
 		
 	}
 	

@@ -23,20 +23,20 @@
       <![CDATA[Path is valid]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-07-10T15:46:28 IST" name="Suite" finished-at="2023-07-10T15:48:08 IST" duration-ms="99929">
+  <suite started-at="2023-07-10T17:32:11 IST" name="Suite" finished-at="2023-07-10T17:34:03 IST" duration-ms="111586">
     <groups>
     </groups>
-    <test started-at="2023-07-10T15:46:28 IST" name="Test" finished-at="2023-07-10T15:48:08 IST" duration-ms="99929">
+    <test started-at="2023-07-10T17:32:11 IST" name="Test" finished-at="2023-07-10T17:34:03 IST" duration-ms="111586">
       <class name="RMITestScript.Registration_Test">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:RMITestScript.Registration_Test@5a755cc1]" started-at="2023-07-10T15:46:13 IST" name="initialize" finished-at="2023-07-10T15:46:28 IST" duration-ms="15174" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:RMITestScript.Registration_Test@5a755cc1]" started-at="2023-07-10T17:31:54 IST" name="initialize" finished-at="2023-07-10T17:32:11 IST" duration-ms="17731" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:RMITestScript.Registration_Test@5a755cc1]" started-at="2023-07-10T15:46:28 IST" name="setup" finished-at="2023-07-10T15:46:35 IST" duration-ms="6546" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:RMITestScript.Registration_Test@5a755cc1]" started-at="2023-07-10T17:32:11 IST" name="setup" finished-at="2023-07-10T17:32:21 IST" duration-ms="9858" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="RegPage()[pri:1, instance:RMITestScript.Registration_Test@5a755cc1]" started-at="2023-07-10T15:46:35 IST" name="RegPage" finished-at="2023-07-10T15:47:14 IST" duration-ms="39689" status="PASS">
+        <test-method signature="RegPage()[pri:1, instance:RMITestScript.Registration_Test@5a755cc1]" started-at="2023-07-10T17:32:21 IST" name="RegPage" finished-at="2023-07-10T17:33:21 IST" duration-ms="59830" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Path is valid]]>
@@ -46,7 +46,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- RegPage -->
-        <test-method is-config="true" signature="getScreenshot(org.openqa.selenium.WebDriver,java.lang.String)[pri:0, instance:RMITestScript.Registration_Test@5a755cc1]" started-at="2023-07-10T15:47:14 IST" name="getScreenshot" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1688984234847" status="FAIL">
+        <test-method is-config="true" signature="getScreenshot(org.openqa.selenium.WebDriver,java.lang.String)[pri:0, instance:RMITestScript.Registration_Test@5a755cc1]" started-at="2023-07-10T17:33:21 IST" name="getScreenshot" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1688990601914" status="FAIL">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
@@ -95,7 +95,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- getScreenshot -->
       </class> <!-- RMITestScript.Registration_Test -->
       <class name="RMITestScript.Applicant_Details">
-        <test-method signature="form()[pri:2, instance:RMITestScript.Applicant_Details@32c726ee]" started-at="2023-07-10T15:47:14 IST" name="form" finished-at="2023-07-10T15:48:08 IST" duration-ms="53355" status="FAIL">
+        <test-method signature="form()[pri:2, instance:RMITestScript.Applicant_Details@32c726ee]" started-at="2023-07-10T17:33:21 IST" name="form" finished-at="2023-07-10T17:34:02 IST" duration-ms="41035" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[timeout: Timed out receiving message from renderer: 25.000
@@ -103,10 +103,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 Build info: version: '4.8.2', revision: '826dbfc730'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6f7b0a79887a334396fc5889b2d03ef2, clickElement {id=CFFCB9942DAA8F0C7AABDA19631FAF4E_element_155}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\RAMYAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56826}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56826/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (6f7b0a79887a334396fc5889b2d03ef2)] -> xpath: //input[@id='btnRegistration']]
-Session ID: 6f7b0a79887a334396fc5889b2d03ef2]]>
+Command: [e001784445112d6286cfe0e89a92ed7e, executeScript {script=window.history.go(-2), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\RAMYAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57191}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57191/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e001784445112d6286cfe0e89a92ed7e]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 25.000
@@ -114,10 +113,9 @@ Session ID: 6f7b0a79887a334396fc5889b2d03ef2]]>
 Build info: version: '4.8.2', revision: '826dbfc730'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6f7b0a79887a334396fc5889b2d03ef2, clickElement {id=CFFCB9942DAA8F0C7AABDA19631FAF4E_element_155}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\RAMYAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56826}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56826/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (6f7b0a79887a334396fc5889b2d03ef2)] -> xpath: //input[@id='btnRegistration']]
-Session ID: 6f7b0a79887a334396fc5889b2d03ef2
+Command: [e001784445112d6286cfe0e89a92ed7e, executeScript {script=window.history.go(-2), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\RAMYAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57191}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57191/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e001784445112d6286cfe0e89a92ed7e
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -130,15 +128,8 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-at POM_Classes.Reg_Form.details(Reg_Form.java:135)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:480)
+at POM_Classes.Reg_Form.details(Reg_Form.java:140)
 at RMITestScript.Applicant_Details.form(Applicant_Details.java:24)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
@@ -189,7 +180,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- form -->
-        <test-method is-config="true" signature="getScreenshot(org.openqa.selenium.WebDriver,java.lang.String)[pri:0, instance:RMITestScript.Applicant_Details@32c726ee]" started-at="2023-07-10T15:48:08 IST" name="getScreenshot" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1688984288419" status="FAIL">
+        <test-method is-config="true" signature="getScreenshot(org.openqa.selenium.WebDriver,java.lang.String)[pri:0, instance:RMITestScript.Applicant_Details@32c726ee]" started-at="2023-07-10T17:34:03 IST" name="getScreenshot" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1688990643445" status="FAIL">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
