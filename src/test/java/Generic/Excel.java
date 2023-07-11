@@ -29,6 +29,6 @@ public class Excel implements Auto_Constant {
 			Reporter.log("Invalid path", true);
 		}
 		return v;				
-	}
+	}	
 
 }

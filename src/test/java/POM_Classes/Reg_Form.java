@@ -38,27 +38,10 @@ public class Reg_Form extends Base_Page implements Auto_Constant {
 
 	@FindBy(id = "PanCardNumber")
 	private WebElement Pan;
-
-	@FindBy(xpath = "//input[@id='DateOfBirth']")
+	
+	@FindBy(id = "DateOfBirth")
 	private WebElement Dob;
 
-	//@FindBy(xpath = "//td[@class='day weekend'][normalize-space()='2']")
-	//private WebElement date;
-	/*
-	 * @FindBy(id = "DateOfBirth") private WebElement dob;
-	 * 
-	 * @FindBy(className = "datepicker-decades") private WebElement decades;
-	 * 
-	 * @FindBy(className = "datepicker-years") private WebElement yearDropdown;
-	 * 
-	 * @FindBy(className = "datepicker-months") private WebElement monthDropdown;
-	 * 
-	 * @FindBy(className="datepicker-days") private WebElement dayOne;
-	 */
-	 
-	// @FindBy(className="('day' + day + '')")
-	// private WebElement day;
-	
 	@FindBy(xpath = "//select[@id='Gender']")
 	private WebElement gen;
 
@@ -89,8 +72,8 @@ public class Reg_Form extends Base_Page implements Auto_Constant {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-
 	public void details(String aname, String pan, String dob, String paddr, String pincde)
+
 			throws InterruptedException, IOException {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
@@ -98,13 +81,9 @@ public class Reg_Form extends Base_Page implements Auto_Constant {
 				.sendKeys(aname);
 
 		new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(Pan)).sendKeys(pan);
-
-		new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(Dob)).sendKeys(dob);
-		//date.click();
-		 
-			
-		
-		
+		new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(Dob)).sendKeys(dob);	 
+	  
+			 
 		Select sel = new Select(gen);
 		sel.selectByIndex(1);
 

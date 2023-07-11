@@ -1,0 +1,38 @@
+[DEBUG] 2023-07-11 16:14:38.327 [main] Test1 - Browser gt launch
+[DEBUG] 2023-07-11 16:14:43.929 [main] Test1 - Browser got launch
+[DEBUG] 2023-07-11 16:14:43.929 [main] Test1 - Navigated to application URL
+[DEBUG] 2023-07-11 16:15:39.278 [main] Test1 - Browser gt launch
+[DEBUG] 2023-07-11 16:15:45.403 [main] Test1 - Browser got launch
+[DEBUG] 2023-07-11 16:15:45.403 [main] Test1 - Navigated to application URL
+[DEBUG] 2023-07-11 16:16:12.051 [main] Test1 - Username And Password got entered
+[DEBUG] 2023-07-11 16:16:12.051 [main] Test1 - Login Successfully!
+[DEBUG] 2023-07-11 16:23:54.065 [main] Test1 - Navigated to application URL
+[DEBUG] 2023-07-11 16:24:09.886 [main] Test1 - Username And Password got entered
+[DEBUG] 2023-07-11 16:24:09.886 [main] Test1 - Login Successfully!
+[DEBUG] 2023-07-11 16:26:22.525 [main] Test1 - Navigated to application URL
+[DEBUG] 2023-07-11 16:26:38.168 [main] Test1 - Username And Password got entered
+[DEBUG] 2023-07-11 16:26:38.169 [main] Test1 - Login Successfully!
+[DEBUG] 2023-07-11 16:46:18.608 [main] Test1 - Navigated to application URL
+[DEBUG] 2023-07-11 16:46:32.929 [main] Test1 - Username And Password got entered
+[DEBUG] 2023-07-11 16:46:32.929 [main] Test1 - Login Successfully!
+[DEBUG] 2023-07-11 16:47:22.926 [main] Test1 - Navigated to application URL
+[DEBUG] 2023-07-11 16:47:37.315 [main] Test1 - Username And Password got entered
+[DEBUG] 2023-07-11 16:47:37.316 [main] Test1 - Login Successfully!
+[DEBUG] 2023-07-11 16:52:12.657 [main] Test1 - Navigated to application URL
+[DEBUG] 2023-07-11 16:52:27.531 [main] Test1 - Username And Password got entered
+[DEBUG] 2023-07-11 16:52:27.532 [main] Test1 - Login Successfully!
+[DEBUG] 2023-07-11 17:14:14.023 [main] Test1 - Navigated to application URL
+[DEBUG] 2023-07-11 17:14:36.352 [main] Test1 - Username And Password got entered
+[DEBUG] 2023-07-11 17:14:36.352 [main] Test1 - Login Successfully!
+[DEBUG] 2023-07-11 17:14:36.434 [main] Test1 - User got logged in
+[ERROR] 2023-07-11 17:14:36.434 [main] Test1 - Login Test got failed
+[DEBUG] 2023-07-11 17:24:12.629 [main] Test1 - Navigated to application URL
+[DEBUG] 2023-07-11 17:24:43.569 [main] Test1 - Username And Password got entered
+[DEBUG] 2023-07-11 17:24:43.569 [main] Test1 - Login Successfully!
+[DEBUG] 2023-07-11 17:24:43.655 [main] Test1 - User got logged in
+[ERROR] 2023-07-11 17:24:43.655 [main] Test1 - Login Test got failed
+[DEBUG] 2023-07-11 17:52:18.710 [main] Test1 - Navigated to application URL
+[DEBUG] 2023-07-11 17:52:44.197 [main] Test1 - Username And Password got entered
+[DEBUG] 2023-07-11 17:52:44.197 [main] Test1 - Login Successfully!
+[DEBUG] 2023-07-11 17:52:44.244 [main] Test1 - User got logged in
+[INFO ] 2023-07-11 17:52:44.244 [main] Test1 - Login Test got passed

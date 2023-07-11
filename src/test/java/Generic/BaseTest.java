@@ -2,18 +2,23 @@ package Generic;
 
 
 import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 
+import RMITestScript.Test1;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -27,8 +32,7 @@ public class BaseTest implements Auto_Constant {
 
 	public static WebDriver driver;
 	public Properties prop;
-
-
+	
 	public BaseTest() {
 		// this.driver=driver;
 		PageFactory.initElements(driver, this);
@@ -36,7 +40,7 @@ public class BaseTest implements Auto_Constant {
 
 	@BeforeSuite
 	public void initialize() throws IOException {
-
+		
 		String path = System.getProperty("user.dir") + "//src//test//resources//ConfigFile//Config.properties";
 
 		FileInputStream fin = new FileInputStream(path);
@@ -61,6 +65,7 @@ public class BaseTest implements Auto_Constant {
 
 
 
+
     @AfterMethod(alwaysRun = true)
    	public String getScreenshot(WebDriver driver, String testCaseName) throws IOException 
     {
@@ -74,10 +79,15 @@ public class BaseTest implements Auto_Constant {
      }
 
 
-// @AfterClass
-//     public void closeBrowser() {
-//	 driver.close();
- }
+   /* @AfterSuite
+	public void tearDown() {
+		driver.close();
+		if (driver != null) {
+			driver.quit();
+			
+		}*/
+    }
+
 
 
 

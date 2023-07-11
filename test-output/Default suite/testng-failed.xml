@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="RMITestScript.Registration_Test">
+      <class name="RMITestScript.Applicant_Details">
         <methods>
-          <include name="setup"/>
-          <include name="RegPage"/>
+          <include name="getScreenshot"/>
+          <include name="tearDown"/>
+          <include name="form"/>
           <include name="initialize"/>
         </methods>
-      </class> <!-- RMITestScript.Registration_Test -->
+      </class> <!-- RMITestScript.Applicant_Details -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

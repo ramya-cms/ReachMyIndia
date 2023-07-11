@@ -44,7 +44,7 @@ public class Login extends Base_Page
 		  usrname.sendKeys(username);
 		  Thread.sleep(2000);
 		  passwd.sendKeys(password);
-		  Thread.sleep(3000);
+		  Thread.sleep(8000);
 		  button.click();
 		 
 	}
