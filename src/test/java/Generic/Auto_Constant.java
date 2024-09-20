@@ -1,6 +1,7 @@
 package Generic;
 
-public interface Auto_Constant {
+public interface Auto_Constant 
+{
 	
 	
 	String Path = System.getProperty("user.dir")+"//src//test//resources//DataDriven//LoginPage.xlsx";
@@ -8,6 +9,7 @@ public interface Auto_Constant {
 
 	String rpath = System.getProperty("user.dir")+"//ExtentReports";
 	//String PrintLogPath = System.getProperty("user.dir") + "//logs//prints.log";
-
+	
 	
 }
+

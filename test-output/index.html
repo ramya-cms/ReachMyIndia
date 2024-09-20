@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-skipped">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>D:\Selenium\ReachMyIndia\testng2.xml</span>
+                    <span>D:\Selenium\ReachMyIndia\wallet.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,  1 skipped,  1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-Suite">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="RMITestScript.Test1" class="method navigator-link" hash-for-method="loginPage(Failure)">loginPage(Failure)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,7 +104,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="RMITestScript.Test1" class="method navigator-link" hash-for-method="loginPage(Success)">loginPage(Success)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="RMITestScript.Wallet_Script" class="method navigator-link" hash-for-method="BlankAmount">BlankAmount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="RMITestScript.Wallet_Script" class="method navigator-link" hash-for-method="DecimalAmount">DecimalAmount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="RMITestScript.Wallet_Script" class="method navigator-link" hash-for-method="LessAmount">LessAmount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="RMITestScript.Wallet_Script" class="method navigator-link" hash-for-method="WallRecharge">WallRecharge</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -133,40 +134,38 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">RMITestScript.Test1</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginPage(Failure)">
-                  </a> <!-- loginPage(Failure) -->
-                  <span class="method-name">loginPage</span>
-                  <span class="parameters">(Failure)</span>
-                  <div class="stack-trace">org.testng.TestNGException: 
-Can inject only one of &lt;ITestContext, XmlTest, Method, Object[], ITestResult&gt; into a @AfterMethod annotated getScreenshot.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">RMITestScript.Test1</span>
+              <span class="class-name">RMITestScript.Wallet_Script</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginPage(Success)">
-                  </a> <!-- loginPage(Success) -->
-                  <span class="method-name">loginPage</span>
-                  <span class="parameters">(Success)</span>
+                  <a name="BlankAmount">
+                  </a> <!-- BlankAmount -->
+                  <span class="method-name">BlankAmount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DecimalAmount">
+                  </a> <!-- DecimalAmount -->
+                  <span class="method-name">DecimalAmount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LessAmount">
+                  </a> <!-- LessAmount -->
+                  <span class="method-name">LessAmount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="WallRecharge">
+                  </a> <!-- WallRecharge -->
+                  <span class="method-name">WallRecharge</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -174,7 +173,7 @@ For more information on native dependency injection please refer to https://test
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Selenium\ReachMyIndia\testng2.xml</span>
+            <span class="header-content">D:\Selenium\ReachMyIndia\wallet.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -186,7 +185,7 @@ For more information on native dependency injection please refer to https://test
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;RMITestScript.Test1&quot;/&gt;
+      &lt;class name=&quot;RMITestScript.Wallet_Script&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -226,20 +225,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginPage')
-data.setCell(0, 2, 'RMITestScript.Test1')
-data.setCell(0, 3, 32467);
+data.setCell(0, 1, 'WallRecharge')
+data.setCell(0, 2, 'RMITestScript.Wallet_Script')
+data.setCell(0, 3, 80234);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginPage')
-data.setCell(1, 2, 'RMITestScript.Test1')
-data.setCell(1, 3, 0);
+data.setCell(1, 1, 'DecimalAmount')
+data.setCell(1, 2, 'RMITestScript.Wallet_Script')
+data.setCell(1, 3, 67888);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'BlankAmount')
+data.setCell(2, 2, 'RMITestScript.Wallet_Script')
+data.setCell(2, 3, 35333);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'LessAmount')
+data.setCell(3, 2, 'RMITestScript.Wallet_Script')
+data.setCell(3, 3, 34048);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 32 seconds</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -251,8 +258,31 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">loginPage(Success)</span>
+              <span class="reporter-method-name">BlankAmount</span>
               <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Path is valid</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">WallRecharge</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Path is valid</span>
+                <span class="reporter-method-output">Path is valid</span>
+                <span class="reporter-method-output">Path is valid</span>
+                <span class="reporter-method-output">Path is valid</span>
+                <span class="reporter-method-output">Path is valid</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">LessAmount</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Path is valid</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">DecimalAmount</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Path is valid</span>
                 <span class="reporter-method-output">Path is valid</span>
                 <span class="reporter-method-output">Path is valid</span>
               </div> <!-- reporter-method-output-div -->
@@ -272,23 +302,67 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">RMITestScript.Test1</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">RMITestScript.Wallet_Script</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">initialize</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
-                <span class="method-name">setup</span>
-                <span class="method-start">18605 ms</span>
+                <span class="method-name">setUp</span>
+                <span class="method-start">8048 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">8070 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginPage(Success)</span>
-                <span class="method-start">18630 ms</span>
+                <span class="method-name">WallRecharge</span>
+                <span class="method-start">8071 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getScreenshot([TestResult name=WallRecharge status=SUCCESS method=Wallet_Script.WallRecharge()[pri:1, instance:RMI...)</span>
+                <span class="method-start">88310 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">loginPage(Failure)</span>
-                <span class="method-start">51107 ms</span>
+                <span class="method-name">BlankAmount</span>
+                <span class="method-start">88313 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">88313 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">getScreenshot([TestResult name=BlankAmount status=SUCCESS method=Wallet_Script.BlankAmount()[pri:2, instance:RMITe...)</span>
+                <span class="method-start">123648 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">123648 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LessAmount</span>
+                <span class="method-start">123649 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getScreenshot([TestResult name=LessAmount status=SUCCESS method=Wallet_Script.LessAmount()[pri:3, instance:RMITest...)</span>
+                <span class="method-start">157698 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">157699 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DecimalAmount</span>
+                <span class="method-start">157699 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getScreenshot([TestResult name=DecimalAmount status=SUCCESS method=Wallet_Script.DecimalAmount()[pri:4, instance:R...)</span>
+                <span class="method-start">225588 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">226287 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

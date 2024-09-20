@@ -9,10 +9,16 @@
 
   <test thread-count="5" name="Test">
   <classes>
-  <class  name = "RMITestScript.Registration_Test"/>
+ 			<class  name = "RMITestScript.Registration_Test"/>
 
     <class  name = "RMITestScript.Applicant_Details"/>
-
+    
+       <class  name = "RMITestScript.OP_Details"/>
+ 			     
+    	    <class  name = "RMITestScript.EmailScriptNew"/>
+    	   
+    	   <class  name = "RMITestScript.CredScript"/>
+      
   </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

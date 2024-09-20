@@ -11,7 +11,7 @@ import org.testng.Assert;
 import org.testng.Reporter;
 
 public class Base_Page {
- protected WebDriver driver;
+ protected static WebDriver driver;
 
 	public void verifytitle(String Title) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));

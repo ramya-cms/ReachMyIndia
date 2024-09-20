@@ -36,3 +36,22 @@
 [DEBUG] 2023-07-11 17:52:44.197 [main] Test1 - Login Successfully!
 [DEBUG] 2023-07-11 17:52:44.244 [main] Test1 - User got logged in
 [INFO ] 2023-07-11 17:52:44.244 [main] Test1 - Login Test got passed
+[DEBUG] 2024-05-31 11:54:21.751 [main] Test1 - Navigated to application URL
+[DEBUG] 2024-05-31 11:54:51.081 [main] Test1 - Username And Password got entered
+[DEBUG] 2024-05-31 11:54:51.082 [main] Test1 - Login Successfully!
+[DEBUG] 2024-05-31 14:33:27.908 [main] Test1 - Navigated to application URL
+[DEBUG] 2024-05-31 14:33:42.169 [main] Test1 - Username And Password got entered
+[DEBUG] 2024-05-31 14:33:42.169 [main] Test1 - Login Successfully!
+[DEBUG] 2024-05-31 14:33:51.706 [main] Test1 - User didn't log in
+[ERROR] 2024-05-31 14:33:51.707 [main] Test1 - Login Test got failed
+[DEBUG] 2024-05-31 14:34:17.698 [main] Test1 - Navigated to application URL
+[DEBUG] 2024-05-31 14:34:51.906 [main] Test1 - Username And Password got entered
+[DEBUG] 2024-05-31 14:34:51.906 [main] Test1 - Login Successfully!
+[DEBUG] 2024-05-31 14:34:51.949 [main] Test1 - User got logged in
+[INFO ] 2024-05-31 14:34:51.949 [main] Test1 - Login Test got passed
+[DEBUG] 2024-05-31 14:34:56.136 [main] Test1 - Navigated to application URL
+[DEBUG] 2024-05-31 14:47:29.782 [main] Test1 - Navigated to application URL
+[DEBUG] 2024-05-31 14:47:43.670 [main] Test1 - Username And Password got entered
+[DEBUG] 2024-05-31 14:47:43.671 [main] Test1 - Login Successfully!
+[DEBUG] 2024-05-31 14:47:47.794 [main] Test1 - Navigated to application URL
+[DEBUG] 2024-06-21 15:52:54.287 [main] Test1 - Navigated to application URL

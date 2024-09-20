@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="0" skipped="1">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Path is valid]]>
@@ -7,28 +7,49 @@
     <line>
       <![CDATA[Path is valid]]>
     </line>
+    <line>
+      <![CDATA[Path is valid]]>
+    </line>
+    <line>
+      <![CDATA[Path is valid]]>
+    </line>
+    <line>
+      <![CDATA[Path is valid]]>
+    </line>
+    <line>
+      <![CDATA[Path is valid]]>
+    </line>
+    <line>
+      <![CDATA[Path is valid]]>
+    </line>
+    <line>
+      <![CDATA[Path is valid]]>
+    </line>
+    <line>
+      <![CDATA[Path is valid]]>
+    </line>
+    <line>
+      <![CDATA[Path is valid]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-07-11T17:52:11 IST" name="Suite" finished-at="2023-07-11T17:52:44 IST" duration-ms="32511">
+  <suite started-at="2024-09-20T11:40:22 IST" name="Suite" finished-at="2024-09-20T11:43:59 IST" duration-ms="217541">
     <groups>
     </groups>
-    <test started-at="2023-07-11T17:52:11 IST" name="Test" finished-at="2023-07-11T17:52:44 IST" duration-ms="32511">
-      <class name="RMITestScript.Test1">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:RMITestScript.Test1@41e68d87]" started-at="2023-07-11T17:51:53 IST" name="initialize" finished-at="2023-07-11T17:52:11 IST" duration-ms="18602" status="PASS">
+    <test started-at="2024-09-20T11:40:22 IST" name="Test" finished-at="2024-09-20T11:43:59 IST" duration-ms="217541">
+      <class name="RMITestScript.Wallet_Script">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:RMITestScript.Wallet_Script@4b40f651]" started-at="2024-09-20T11:40:13 IST" name="initialize" finished-at="2024-09-20T11:40:22 IST" duration-ms="8045" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:RMITestScript.Test1@41e68d87]" started-at="2023-07-11T17:52:11 IST" name="setup" finished-at="2023-07-11T17:52:11 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:RMITestScript.Wallet_Script@4b40f651]" started-at="2024-09-20T11:40:22 IST" name="setUp" finished-at="2024-09-20T11:40:22 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="loginPage(java.lang.String)[pri:1, instance:RMITestScript.Test1@41e68d87]" started-at="2023-07-11T17:52:11 IST" name="loginPage" data-provider="getLoginData" finished-at="2023-07-11T17:52:44 IST" duration-ms="32467" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Success]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:RMITestScript.Wallet_Script@4b40f651]" started-at="2024-09-20T11:40:22 IST" name="beforeMethod" finished-at="2024-09-20T11:40:22 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="WallRecharge()[pri:1, instance:RMITestScript.Wallet_Script@4b40f651]" started-at="2024-09-20T11:40:22 IST" name="WallRecharge" finished-at="2024-09-20T11:41:42 IST" duration-ms="80234" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Path is valid]]>
@@ -36,157 +57,105 @@
             <line>
               <![CDATA[Path is valid]]>
             </line>
+            <line>
+              <![CDATA[Path is valid]]>
+            </line>
+            <line>
+              <![CDATA[Path is valid]]>
+            </line>
+            <line>
+              <![CDATA[Path is valid]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- loginPage -->
-        <test-method is-config="true" signature="getScreenshot(org.openqa.selenium.WebDriver,java.lang.String)[pri:0, instance:RMITestScript.Test1@41e68d87]" started-at="2023-07-11T17:52:44 IST" name="getScreenshot" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1689078164251" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @AfterMethod annotated getScreenshot.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @AfterMethod annotated getScreenshot.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
-at org.testng.internal.Parameters.createParameters(Parameters.java:708)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getScreenshot -->
-        <test-method signature="loginPage(java.lang.String)[pri:1, instance:RMITestScript.Test1@41e68d87]" started-at="2023-07-11T17:52:44 IST" name="loginPage" data-provider="getLoginData" finished-at="2023-07-11T17:52:44 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- WallRecharge -->
+        <test-method is-config="true" signature="getScreenshot(org.testng.ITestResult)[pri:0, instance:RMITestScript.Wallet_Script@4b40f651]" started-at="2024-09-20T11:41:42 IST" name="getScreenshot" finished-at="2024-09-20T11:41:42 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Failure]]>
+                <![CDATA[[TestResult name=WallRecharge status=SUCCESS method=Wallet_Script.WallRecharge()[pri:1, instance:RMITestScript.Wallet_Script@4b40f651] output=Path is valid]]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @AfterMethod annotated getScreenshot.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @AfterMethod annotated getScreenshot.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
-at org.testng.internal.Parameters.createParameters(Parameters.java:708)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginPage -->
-        <test-method is-config="true" signature="getScreenshot(org.openqa.selenium.WebDriver,java.lang.String)[pri:0, instance:RMITestScript.Test1@41e68d87]" started-at="2023-07-11T17:52:44 IST" name="getScreenshot" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1689078164260" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @AfterMethod annotated getScreenshot.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Can inject only one of <ITestContext, XmlTest, Method, Object[], ITestResult> into a @AfterMethod annotated getScreenshot.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
-at org.testng.internal.Parameters.createParameters(Parameters.java:708)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:546)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getScreenshot -->
-      </class> <!-- RMITestScript.Test1 -->
+        <test-method signature="BlankAmount()[pri:2, instance:RMITestScript.Wallet_Script@4b40f651]" started-at="2024-09-20T11:41:42 IST" name="BlankAmount" finished-at="2024-09-20T11:42:17 IST" duration-ms="35333" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Path is valid]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BlankAmount -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:RMITestScript.Wallet_Script@4b40f651]" started-at="2024-09-20T11:41:42 IST" name="beforeMethod" finished-at="2024-09-20T11:41:42 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="getScreenshot(org.testng.ITestResult)[pri:0, instance:RMITestScript.Wallet_Script@4b40f651]" started-at="2024-09-20T11:42:17 IST" name="getScreenshot" finished-at="2024-09-20T11:42:17 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=BlankAmount status=SUCCESS method=Wallet_Script.BlankAmount()[pri:2, instance:RMITestScript.Wallet_Script@4b40f651] output=Path is valid]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getScreenshot -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:RMITestScript.Wallet_Script@4b40f651]" started-at="2024-09-20T11:42:17 IST" name="beforeMethod" finished-at="2024-09-20T11:42:17 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="LessAmount()[pri:3, instance:RMITestScript.Wallet_Script@4b40f651]" started-at="2024-09-20T11:42:17 IST" name="LessAmount" finished-at="2024-09-20T11:42:51 IST" duration-ms="34048" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Path is valid]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- LessAmount -->
+        <test-method is-config="true" signature="getScreenshot(org.testng.ITestResult)[pri:0, instance:RMITestScript.Wallet_Script@4b40f651]" started-at="2024-09-20T11:42:51 IST" name="getScreenshot" finished-at="2024-09-20T11:42:51 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LessAmount status=SUCCESS method=Wallet_Script.LessAmount()[pri:3, instance:RMITestScript.Wallet_Script@4b40f651] output=Path is valid]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getScreenshot -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:RMITestScript.Wallet_Script@4b40f651]" started-at="2024-09-20T11:42:51 IST" name="beforeMethod" finished-at="2024-09-20T11:42:51 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="DecimalAmount()[pri:4, instance:RMITestScript.Wallet_Script@4b40f651]" started-at="2024-09-20T11:42:51 IST" name="DecimalAmount" finished-at="2024-09-20T11:43:59 IST" duration-ms="67888" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Path is valid]]>
+            </line>
+            <line>
+              <![CDATA[Path is valid]]>
+            </line>
+            <line>
+              <![CDATA[Path is valid]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- DecimalAmount -->
+        <test-method is-config="true" signature="getScreenshot(org.testng.ITestResult)[pri:0, instance:RMITestScript.Wallet_Script@4b40f651]" started-at="2024-09-20T11:43:59 IST" name="getScreenshot" finished-at="2024-09-20T11:43:59 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DecimalAmount status=SUCCESS method=Wallet_Script.DecimalAmount()[pri:4, instance:RMITestScript.Wallet_Script@4b40f651] output=Path is valid]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getScreenshot -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:RMITestScript.Wallet_Script@4b40f651]" started-at="2024-09-20T11:44:00 IST" name="afterSuite" finished-at="2024-09-20T11:44:01 IST" duration-ms="1046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- RMITestScript.Wallet_Script -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
