@@ -51,8 +51,8 @@ public class OPLogin extends Base_Page {
     @FindBy(xpath="//input[@id='btnSubmit']")
     private WebElement submit;
 
-    //@FindBy(xpath="//input[@id='Back']")
-    //private WebElement Backbtn;
+    @FindBy(xpath="//input[@id='Back']")
+    private WebElement Backbtn;
 
     @FindBy(xpath="//*[@id=\"vdname\"]/section[1]/div[1]/div[1]/div[1]/ul[1]/li[3]/a[1]")
     private WebElement logout;
@@ -86,7 +86,10 @@ public class OPLogin extends Base_Page {
         drop.selectByVisibleText("Approved");
         Thread.sleep(2000);
         wait.until(ExpectedConditions.visibilityOf(submit)).click();
-       // wait.until(ExpectedConditions.visibilityOf(Backbtn)).click();
-       // wait.until(ExpectedConditions.visibilityOf(logout)).click();
+        Thread.sleep(2000);
+        driver.switchTo().alert().accept();
+        Thread.sleep(2000);
+       wait.until(ExpectedConditions.visibilityOf(Backbtn)).click();
+       wait.until(ExpectedConditions.visibilityOf(logout)).click();
     }
 }

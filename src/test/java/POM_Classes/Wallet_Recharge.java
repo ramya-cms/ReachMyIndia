@@ -67,6 +67,12 @@ public class Wallet_Recharge extends Base_Page
     @FindBy(xpath="//input[@name='failure1']")
     private WebElement failure;
     
+    @FindBy(xpath="//small[normalize-space()='Back']")
+    private WebElement back;
+    
+    @FindBy(xpath="//button[@class='common-btn txt-btn']")
+    private WebElement yes;
+    
     @FindBy(xpath="//a[@role='button']")
     private WebElement log;
     
@@ -86,6 +92,13 @@ public class Wallet_Recharge extends Base_Page
         wait.until(ExpectedConditions.visibilityOf(rech_txt)).sendKeys(amount);
         wait.until(ExpectedConditions.elementToBeClickable(submit)).click();
         
+    }
+    
+    
+    public void cancelPay()
+    {
+    	
+    	wait.until(ExpectedConditions.elementToBeClickable(cancel)).click();
     }
     
     public void bank()
@@ -118,7 +131,25 @@ public class Wallet_Recharge extends Base_Page
         wait.until(ExpectedConditions.elementToBeClickable(success)).click();
         Thread.sleep(3000);
   }
-   public void logout()     
+  
+  
+  public void  axiscancel(String username,String password) throws InterruptedException
+  {
+	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+	  wait.until(ExpectedConditions.elementToBeClickable(axis)).click();
+      wait.until(ExpectedConditions.elementToBeClickable(proceed)).click();
+      wait.until(ExpectedConditions.visibilityOf(user)).sendKeys(username);
+      wait.until(ExpectedConditions.visibilityOf(pswd)).sendKeys(password);
+      wait.until(ExpectedConditions.elementToBeClickable(sub)).click();
+      Thread.sleep(1000);
+      wait.until(ExpectedConditions.elementToBeClickable(failure)).click();
+      Thread.sleep(3000);
+      wait.until(ExpectedConditions.elementToBeClickable(back)).click();
+      wait.until(ExpectedConditions.elementToBeClickable(yes)).click();
+      
+  }
+   
+  public void logout()     
    {
 	   driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	   wait.until(ExpectedConditions.elementToBeClickable(log)).click();

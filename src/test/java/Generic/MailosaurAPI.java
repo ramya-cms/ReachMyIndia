@@ -11,8 +11,8 @@ import java.util.Base64;
 
 
 public class MailosaurAPI {
-    private static final String API_KEY = "thJGcMxXzoRMU7io6AKolsbvGQVpjXPK";
-    private static final String SERVER_ID = "0g4tnuyv";
+    private static final String API_KEY = "Yf6dWwsnZgOvIY24dFZ4jeFLwTL8cNS0";
+    private static final String SERVER_ID = "h5elioah";
     private static final String BASE_URL = "https://mailosaur.com/api";
     
     

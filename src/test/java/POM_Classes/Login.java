@@ -6,6 +6,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -77,13 +78,39 @@ public class Login extends Base_Page {
         wait.until(ExpectedConditions.elementToBeClickable(log)).click();
     }
 
+	
 
-    
+	public boolean isLoginSuccessful() {
+	    try {
+	        // Example: Check if a specific element is visible post-login
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	        return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class='loginTop']"))).isDisplayed();
+	    } catch (TimeoutException e) {
+	        return false;
+	    }
+	   
+	}
+	
+	public boolean isLoggedIn() {
+		// TODO Auto-generated method stub
+		
+		 try {
+		        // Example: Check if a specific element is visible post-login
+		        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		        return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[normalize-space()='Sign out']"))).isDisplayed();
+		    } catch (TimeoutException e) {
+		    	return false;
+	}
+
+	}
+
+
+//    
 //    public void logout()
 //    {	
 //    	wait.until(ExpectedConditions.elementToBeClickable(drop)).click();
 //    	wait.until(ExpectedConditions.elementToBeClickable(logout)).click();
 //    }
     
-   
 }
+

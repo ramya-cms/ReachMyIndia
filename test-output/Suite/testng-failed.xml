@@ -6,16 +6,15 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="RMITestScript.Wallet_Script">
+      <class name="RMITestScript.ReportsScript">
         <methods>
           <include name="beforeMethod"/>
-          <include name="DecimalAmount"/>
           <include name="getScreenshot"/>
+          <include name="Repo"/>
           <include name="afterSuite"/>
           <include name="initialize"/>
-          <include name="setUp"/>
         </methods>
-      </class> <!-- RMITestScript.Wallet_Script -->
+      </class> <!-- RMITestScript.ReportsScript -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

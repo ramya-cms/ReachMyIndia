@@ -39,7 +39,7 @@ public class CredentialsScript extends BaseTest {
     }
 
     private void fetchCredentialsFromDatabase() throws SQLException {
-        String query = "SELECT TOP 1 Username, Password FROM CMN_MASTER_USERS WHERE EMAILID='test@9vekviur.mailosaur.net' ORDER BY CreatedDate DESC";
+        String query = "SELECT TOP 1 Username, Password FROM CMN_MASTER_USERS WHERE EMAILID='testuser@h5elioah.mailosaur.net' ORDER BY CreatedDate DESC";
         Statement statement = connection.createStatement();
         ResultSet resultSet = statement.executeQuery(query);
 

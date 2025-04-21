@@ -15,7 +15,7 @@ public class ExtentReporterNG implements Auto_Constant
 		
 		ExtentReports extent = new ExtentReports();
 		extent.attachReporter(reporter);
-		extent.setSystemInfo("Tester", "Ram");
+		extent.setSystemInfo("Tester", "Ramya");
 		extent.createTest(rpath);
 		return extent;
 	}

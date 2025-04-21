@@ -172,8 +172,8 @@ public class Wallet_Script extends BaseTest {
         recharge.axis(puser, ppswd);
         log.debug("Payu credentials got entered");
         
-        recharge.logout();
-        log.debug("Application was logout");
+       // recharge.logout();
+       // log.debug("Application was logout");
         
         String actualResult = "Success";
         String expectedResult = "Success";
@@ -184,4 +184,84 @@ public class Wallet_Script extends BaseTest {
         
         
     }
+    
+    @Test(priority=5)
+    public void PaymentFailure() throws InterruptedException
+    {
+    	log.debug("Testing  with valid amount, but user clicks on cancel button");
+        // Fetching data from Excel
+        String amount = Excel.Testdata(Path, "Sheet1", 19, 0);
+        
+        // Initialize the Wallet_Recharge page and attempt recharge with decimal amount
+        recharge = new Wallet_Recharge(driver);
+        recharge.recharge(amount);
+        log.debug("Amount entered : 100 and navigated to payment gateway");
+        
+        
+        recharge.cancelPay();
+        log.debug("User clicked on Cancel button");
+        
+        String actualResult = "Transaction cancelled by user";
+        String expectedResult = "Transaction cancelled by user";
+        
+        log.debug("Expected result: " + expectedResult + ", Actual result: " + actualResult);
+        
+        Assert.assertEquals(actualResult, expectedResult, "Wallet Recharge Failed");
+        
+    	
+    }
+    
+    
+    @Test(priority=6)
+    public void PaymentBankFailure() throws InterruptedException
+    {
+    	log.debug("Testing  with valid amount, but user clicks on failure button in payment gatewayh screen");
+        // Fetching data from Excel
+        String amount = Excel.Testdata(Path, "Sheet1", 19, 0);
+        
+        String username = Excel.Testdata(Path, "Sheet1", 19, 2);
+        String password = Excel.Testdata(Path, "Sheet1", 19, 3);
+        
+        // Initialize the Wallet_Recharge page and attempt recharge with decimal amount
+        recharge = new Wallet_Recharge(driver);
+        recharge.recharge(amount);
+        log.debug("Amount entered : 100 and navigated to payment gateway");
+        
+        recharge.bank();
+        log.debug("Paymode selected : Net Banking");
+
+        // Perform payment via Axis bank
+        recharge.axiscancel(username, password);
+        log.debug("Payu credentials got entered, user selects technical failure and clicks on Failure button");
+        
+        
+        String actualResult = "Transaction cancelled by user";
+        String expectedResult = "Transaction is cancelled";
+        
+        expectedResult="\"Transaction failed due to technical failure\"";
+        
+        log.debug("User clicks on Back button and clicks on Cancel Payment") ;
+        
+        actualResult = "Transaction failed due to technical failure";
+       
+        log.debug("Expected result: " + expectedResult + ", Actual result: " + actualResult);
+        
+        Assert.assertEquals(actualResult, expectedResult, "Wallet Recharge Failed,failure - Bank failed to authenticate the customer");
+        
+        recharge.logout();
+        log.debug("Application was logout");
+    }
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+

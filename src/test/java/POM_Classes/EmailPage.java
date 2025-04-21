@@ -1,3 +1,4 @@
+//to open only email separately
 package POM_Classes;
 
 import java.time.Duration;

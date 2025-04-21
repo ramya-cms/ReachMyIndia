@@ -42,8 +42,19 @@ public class TVS_Script extends BaseTest
 	    String Fname = Excel.Testdata(Path, "Sheet1", 12, 0);
 	    String Phone = Excel.Testdata(Path, "Sheet1", 12, 1);
 	    String Mobile = Excel.Testdata(Path, "Sheet1", 12, 2);
+	    String Dob = Excel.Testdata(Path, "Sheet1" , 12, 6);
 	    String Add1 = Excel.Testdata(Path, "Sheet1", 12, 3);
 	    String Pin = Excel.Testdata(Path, "Sheet1", 12, 4);
+	    String path = Excel.Testdata(Path, "Sheet1", 12, 5);
+	    String state = Excel.Testdata(Path, "Sheet1", 12, 7);
+	    
+	    String dist = Excel.Testdata(Path, "Sheet1", 12, 8);
+	    
+	    String tal = Excel.Testdata(Path, "Sheet1", 12, 9);
+	    
+	    String prod = Excel.Testdata(Path, "Sheet1", 12, 10);
+	    String atrack = Excel.Testdata(Path, "Sheet1", 12, 12);
+	    String dtype = Excel.Testdata(Path, "Sheet1", 12, 5);
 	    
 	    
 	   
@@ -51,13 +62,20 @@ public class TVS_Script extends BaseTest
          // Perform login
          loginPage.login(username, password);
          Thread.sleep(3000);
-	    
-	     Thread.sleep(1000);
+	  
 	     tser = new TVS_Service(driver);
 	     Thread.sleep(1000);
 	     
-	     Thread.sleep(1000);
-	     tser.details(Fname, Phone, Mobile, Add1, Pin, Pin, Pin, Pin);
+	     tser.details(Fname, Phone, Mobile, Dob, Add1, state, dist, tal, Pin, prod, atrack, dtype, path);
+	     tser.logout();
+	     
+	     
 }
+	@Test(priority=2)
+	public void BlankFields()
+	{
+		
+	}
+	
 
 }

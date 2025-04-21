@@ -10,7 +10,7 @@
   <test thread-count="5" name="Test">
   <classes>
   
-  <class  name = "RMITestScript.TVS_Script"/>
+  <class  name = "RMITestScript.TVS_Script_WithDataProviders"/>
 
    
 

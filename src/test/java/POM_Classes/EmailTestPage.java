@@ -37,7 +37,7 @@ public class EmailTestPage extends Base_Page {
     @FindBy(xpath = "//a[normalize-space()='click here']")
     private WebElement checkfordeposit;
 
-    @FindBy(xpath="//a[@class='_btn_8oj2v_5 _secondary_8oj2v_51 _btnRound_8oj2v_237 _iconNoChildren_8oj2v_13']")
+    @FindBy(xpath="//a[@class='_btn_1v5n3_5 _secondary_1v5n3_51 _btnRound_1v5n3_237 _iconNoChildren_1v5n3_13']//div//*[name()='svg']")
     private WebElement back;
     
     public EmailTestPage(WebDriver driver) {
@@ -97,6 +97,7 @@ public class EmailTestPage extends Base_Page {
 
             driver.switchTo().window(currentWindowHandle);
             System.out.println("Switched back to original tab");
+            Thread.sleep(1000);
         } else {
             System.out.println("New tab not found");
         }

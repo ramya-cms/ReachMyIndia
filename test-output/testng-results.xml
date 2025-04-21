@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Path is valid]]>
@@ -13,43 +13,21 @@
     <line>
       <![CDATA[Path is valid]]>
     </line>
-    <line>
-      <![CDATA[Path is valid]]>
-    </line>
-    <line>
-      <![CDATA[Path is valid]]>
-    </line>
-    <line>
-      <![CDATA[Path is valid]]>
-    </line>
-    <line>
-      <![CDATA[Path is valid]]>
-    </line>
-    <line>
-      <![CDATA[Path is valid]]>
-    </line>
-    <line>
-      <![CDATA[Path is valid]]>
-    </line>
   </reporter-output>
-  <suite started-at="2024-09-20T11:40:22 IST" name="Suite" finished-at="2024-09-20T11:43:59 IST" duration-ms="217541">
+  <suite started-at="2025-04-21T12:48:46 IST" name="Suite" finished-at="2025-04-21T12:49:30 IST" duration-ms="43971">
     <groups>
     </groups>
-    <test started-at="2024-09-20T11:40:22 IST" name="Test" finished-at="2024-09-20T11:43:59 IST" duration-ms="217541">
-      <class name="RMITestScript.Wallet_Script">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:RMITestScript.Wallet_Script@4b40f651]" started-at="2024-09-20T11:40:13 IST" name="initialize" finished-at="2024-09-20T11:40:22 IST" duration-ms="8045" status="PASS">
+    <test started-at="2025-04-21T12:48:46 IST" name="Test" finished-at="2025-04-21T12:49:30 IST" duration-ms="43971">
+      <class name="RMITestScript.ReportsScript">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:RMITestScript.ReportsScript@50d13246]" started-at="2025-04-21T12:48:10 IST" name="initialize" finished-at="2025-04-21T12:48:46 IST" duration-ms="36137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:RMITestScript.Wallet_Script@4b40f651]" started-at="2024-09-20T11:40:22 IST" name="setUp" finished-at="2024-09-20T11:40:22 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:RMITestScript.Wallet_Script@4b40f651]" started-at="2024-09-20T11:40:22 IST" name="beforeMethod" finished-at="2024-09-20T11:40:22 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:RMITestScript.ReportsScript@50d13246]" started-at="2025-04-21T12:48:46 IST" name="beforeMethod" finished-at="2025-04-21T12:48:46 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="WallRecharge()[pri:1, instance:RMITestScript.Wallet_Script@4b40f651]" started-at="2024-09-20T11:40:22 IST" name="WallRecharge" finished-at="2024-09-20T11:41:42 IST" duration-ms="80234" status="PASS">
+        <test-method signature="Repo()[pri:1, instance:RMITestScript.ReportsScript@50d13246]" started-at="2025-04-21T12:48:46 IST" name="Repo" finished-at="2025-04-21T12:49:30 IST" duration-ms="43947" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Path is valid]]>
@@ -63,99 +41,24 @@
             <line>
               <![CDATA[Path is valid]]>
             </line>
-            <line>
-              <![CDATA[Path is valid]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- WallRecharge -->
-        <test-method is-config="true" signature="getScreenshot(org.testng.ITestResult)[pri:0, instance:RMITestScript.Wallet_Script@4b40f651]" started-at="2024-09-20T11:41:42 IST" name="getScreenshot" finished-at="2024-09-20T11:41:42 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- Repo -->
+        <test-method is-config="true" signature="getScreenshot(org.testng.ITestResult)[pri:0, instance:RMITestScript.ReportsScript@50d13246]" started-at="2025-04-21T12:49:30 IST" name="getScreenshot" finished-at="2025-04-21T12:49:30 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=WallRecharge status=SUCCESS method=Wallet_Script.WallRecharge()[pri:1, instance:RMITestScript.Wallet_Script@4b40f651] output=Path is valid]]]>
+                <![CDATA[[TestResult name=Repo status=SUCCESS method=ReportsScript.Repo()[pri:1, instance:RMITestScript.ReportsScript@50d13246] output=Path is valid]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getScreenshot -->
-        <test-method signature="BlankAmount()[pri:2, instance:RMITestScript.Wallet_Script@4b40f651]" started-at="2024-09-20T11:41:42 IST" name="BlankAmount" finished-at="2024-09-20T11:42:17 IST" duration-ms="35333" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Path is valid]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- BlankAmount -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:RMITestScript.Wallet_Script@4b40f651]" started-at="2024-09-20T11:41:42 IST" name="beforeMethod" finished-at="2024-09-20T11:41:42 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="getScreenshot(org.testng.ITestResult)[pri:0, instance:RMITestScript.Wallet_Script@4b40f651]" started-at="2024-09-20T11:42:17 IST" name="getScreenshot" finished-at="2024-09-20T11:42:17 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=BlankAmount status=SUCCESS method=Wallet_Script.BlankAmount()[pri:2, instance:RMITestScript.Wallet_Script@4b40f651] output=Path is valid]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getScreenshot -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:RMITestScript.Wallet_Script@4b40f651]" started-at="2024-09-20T11:42:17 IST" name="beforeMethod" finished-at="2024-09-20T11:42:17 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="LessAmount()[pri:3, instance:RMITestScript.Wallet_Script@4b40f651]" started-at="2024-09-20T11:42:17 IST" name="LessAmount" finished-at="2024-09-20T11:42:51 IST" duration-ms="34048" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Path is valid]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- LessAmount -->
-        <test-method is-config="true" signature="getScreenshot(org.testng.ITestResult)[pri:0, instance:RMITestScript.Wallet_Script@4b40f651]" started-at="2024-09-20T11:42:51 IST" name="getScreenshot" finished-at="2024-09-20T11:42:51 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=LessAmount status=SUCCESS method=Wallet_Script.LessAmount()[pri:3, instance:RMITestScript.Wallet_Script@4b40f651] output=Path is valid]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getScreenshot -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:RMITestScript.Wallet_Script@4b40f651]" started-at="2024-09-20T11:42:51 IST" name="beforeMethod" finished-at="2024-09-20T11:42:51 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="DecimalAmount()[pri:4, instance:RMITestScript.Wallet_Script@4b40f651]" started-at="2024-09-20T11:42:51 IST" name="DecimalAmount" finished-at="2024-09-20T11:43:59 IST" duration-ms="67888" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Path is valid]]>
-            </line>
-            <line>
-              <![CDATA[Path is valid]]>
-            </line>
-            <line>
-              <![CDATA[Path is valid]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- DecimalAmount -->
-        <test-method is-config="true" signature="getScreenshot(org.testng.ITestResult)[pri:0, instance:RMITestScript.Wallet_Script@4b40f651]" started-at="2024-09-20T11:43:59 IST" name="getScreenshot" finished-at="2024-09-20T11:43:59 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=DecimalAmount status=SUCCESS method=Wallet_Script.DecimalAmount()[pri:4, instance:RMITestScript.Wallet_Script@4b40f651] output=Path is valid]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getScreenshot -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:RMITestScript.Wallet_Script@4b40f651]" started-at="2024-09-20T11:44:00 IST" name="afterSuite" finished-at="2024-09-20T11:44:01 IST" duration-ms="1046" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:RMITestScript.ReportsScript@50d13246]" started-at="2025-04-21T12:49:34 IST" name="afterSuite" finished-at="2025-04-21T12:49:35 IST" duration-ms="1095" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- RMITestScript.Wallet_Script -->
+      </class> <!-- RMITestScript.ReportsScript -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -1,190 +1,187 @@
 package POM_Classes;
 
+import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
-
-import org.openqa.selenium.ElementClickInterceptedException;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.*;
+import org.testng.Assert;
 
 import Generic.BaseTest;
 
-public class TVS_Service extends BaseTest
-{
+public class TVS_Service extends BaseTest {
 
-		WebDriver driver;
-		WebDriverWait wait;
-		
-		@FindBy(xpath="//h4[normalize-space()='TVS Loan']")
-		private WebElement tvs;
-		
-		@FindBy(xpath="//input[@id='FullName']")
-		private WebElement name;
-		
-		@FindBy(xpath="//input[@id='Phone']")
-		private WebElement phone;
-		
-		
-		@FindBy(xpath="//input[@id='Mobile']")
-		private WebElement mobile;
-		
-		
-		@FindBy(xpath="//input[@id='DateOfBirth']")
-		private WebElement dob;
-		
-		
-		@FindBy(xpath="//input[@id='Street1']")
-		private WebElement add1;
-		
-		@FindBy(id="State")
-		private WebElement state;
-		
-		@FindBy(id="District")
-		private WebElement district;
-		
-		@FindBy(id="Taluka")
-		private WebElement taluk;
-		
-		
-		@FindBy(id="PinCode")
-		private WebElement pincode;
-		
-		@FindBy(id="DateTimeOfMeeting")
-		private WebElement date;
-		
-		
-		@FindBy(id="FollowUpDate")
-		private WebElement fdate;
-		
-		@FindBy(id="Product")
-		private WebElement pname;
-		
-		@FindBy(xpath="//select[@id='AvailableTrack']")
-		private WebElement atrack;
-		
-		@FindBy(id="DocumentType")
-		private WebElement doctype;
-		
-		@FindBy(xpath="//input[@id='DocId']")
-		private WebElement chfile;
-		
-		
-		@FindBy(xpath="//input[@id='Continue']")
-		private WebElement cont;
-		
-		
-		@FindBy(xpath="//a[normalize-space()='Sign out']")
-		private WebElement logout;
-		
-		JavascriptExecutor js = (JavascriptExecutor) driver;
+    WebDriver driver;
+    WebDriverWait wait;
+    JavascriptExecutor js;
 
-		
-		
-		public TVS_Service(WebDriver driver) 
-		{
-			this.driver = driver;
-	        this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-	        PageFactory.initElements(driver, this);
-		
+    @FindBy(xpath = "//a[normalize-space()='Services']")
+    private WebElement ser;
+
+    @FindBy(xpath = "//h4[normalize-space()='TVS Loan']")
+    private WebElement tvs;
+
+    @FindBy(xpath = "//input[@id='FullName']")
+    private WebElement name;
+
+    @FindBy(xpath = "//input[@id='Phone']")
+    private WebElement phone;
+
+    @FindBy(xpath = "//input[@id='Mobile']")
+    private WebElement mobile;
+
+    @FindBy(xpath = "//input[@id='DateOfBirth']")
+    private WebElement dob;
+
+    @FindBy(xpath = "//input[@id='Street1']")
+    private WebElement add1;
+
+    @FindBy(id = "State")
+    private WebElement state;
+
+    @FindBy(id = "District")
+    private WebElement district;
+
+    @FindBy(id = "Taluka")
+    private WebElement taluk;
+
+    @FindBy(id = "PinCode")
+    private WebElement pincode;
+
+    @FindBy(id = "DateTimeOfMeeting")
+    private WebElement date;
+
+    @FindBy(id = "FollowUpDate")
+    private WebElement fdate;
+
+    @FindBy(id = "Product")
+    private WebElement pname;
+
+    @FindBy(xpath = "//select[@id='AvailableTrack']")
+    private WebElement atrack;
+
+    @FindBy(id = "DocumentType")
+    private WebElement doctype;
+
+    @FindBy(xpath = "//input[@id='DocId']")
+    private WebElement chfile;
+
+    @FindBy(xpath = "//input[@id='Continue']")
+    private WebElement cont;
+
+    @FindBy(xpath = "//a[@role='button']")
+    private WebElement log;
+
+    @FindBy(xpath = "//a[normalize-space()='Sign out']")
+    private WebElement logout;
+
+    @FindBy(linkText = "Payment Acknowledgement")
+    private WebElement receipt;
+
+    @FindBy(xpath = "//div[@class='textleft padleft-1 fontBold']")
+    private WebElement success;
+
+    public TVS_Service(WebDriver driver) {
+        this.driver = driver;
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        PageFactory.initElements(driver, this);
+        this.js = (JavascriptExecutor) driver;
+    }
+
+    public void details(String fname, String ph, String mob, String db, String add, String stat,
+            String dist, String tal, String pin, String prod, String attrack, String dtype, String path)
+            throws IOException, InterruptedException {
+        // Scroll to TVS Loan section
+        scrollToElement(tvs);
+        clickElement(tvs, "TVS Loan");
+
+        // Fill in details with assertions
+        fillField(name, fname, "Full Name");
+        fillField(phone, ph, "Phone");
+        fillField(mobile, mob, "Mobile");
+        fillField(dob, db, "Date of Birth");
+        fillField(add1, add, "Address");
+
+        // Dropdown selections with assertions
+        selectDropdownByText(state, stat);
+        selectDropdownByText(district, dist);
+        selectDropdownByText(taluk, tal);
+
+        fillField(pincode, pin, "Pin Code");
+        Thread.sleep(1000);
+
+        // Select dates
+        clickElement(date, "Meeting Date");
+        Thread.sleep(1000);
+        clickElement(fdate, "Follow-Up Date");
+        Thread.sleep(1000);
+
+        selectDropdownByText(pname, prod);
+        selectDropdownByText(atrack, attrack);
+        selectDropdownByText(doctype, dtype);
+
+        // File upload
+        uploadFile(chfile, path);
+
+        // Continue and validate receipt
+        clickElement(cont, "Continue");
+    }
+
+    private void fillField(WebElement element, String value, String fieldName) {
+        Assert.assertTrue(element.isDisplayed(), fieldName + " field is not displayed");
+        Assert.assertTrue(element.isEnabled(), fieldName + " field is not enabled");
+        wait.until(ExpectedConditions.visibilityOf(element)).sendKeys(value);
+    }
+
+    private void selectDropdownByText(WebElement element, String text) {
+        Select dropdown = new Select(element);
+        dropdown.selectByVisibleText(text);
+        Assert.assertEquals(dropdown.getFirstSelectedOption().getText(), text,
+                "Dropdown selection is incorrect for " + element);
+    }
+
+    private void uploadFile(WebElement fileInput, String path) throws IOException {
+        File file = new File(path);
+        Assert.assertTrue(file.exists(), "File does not exist: " + path);
+
+        fileInput.sendKeys(path);
+
+        String actualFilePath = fileInput.getAttribute("value");
+        Assert.assertNotNull(actualFilePath, "File upload failed");
+        Assert.assertTrue(actualFilePath.endsWith(file.getName()), "Uploaded file mismatch");
+    }
+
+    // Scroll and click with enhanced handling
+    private void scrollToElement(WebElement element) {
+        js.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+
+    private void clickElement(WebElement element, String elementName) {
+        try {
+            // Wait for the element to be clickable and click
+            wait.until(ExpectedConditions.elementToBeClickable(element)).click();
+        } catch (ElementClickInterceptedException e) {
+            System.out.println(elementName + " is intercepted. Clicking via JavaScript.");
+            js.executeScript("arguments[0].click();", element);
+        } catch (TimeoutException e) {
+            throw new RuntimeException(elementName + " is not clickable within the timeout period.", e);
+        }
+    }
+
+    public void services() {
+        clickElement(ser, "Services");
+    }
+
+    public void scroll() {
+        js.executeScript("window.scrollTo(0, -550)");
+        clickElement(ser, "Services after scrolling");
+    }
+
+    public void logout() {
+        clickElement(log, "Logout");
+        clickElement(logout, "Sign Out");
+        Assert.assertTrue(driver.getCurrentUrl().contains("login"), "Logout failed");
+    }
 }
-		
-		
-		public void details(String fname, String ph, String mob, String db,String add, String pincde,String dat,String fdat)
-
-				throws InterruptedException, IOException {
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-			
-			
-			 JavascriptExecutor js = (JavascriptExecutor) driver;
-		        js.executeScript("window.scrollBy(0,850)", "");
-		        
-		     // Scroll the submit button into view
-		        JavascriptExecutor js1 = (JavascriptExecutor) driver;
-		        js1.executeScript("arguments[0].scrollIntoView(true);", tvs);
-		        Thread.sleep(1000); // Just to ensure the scroll has completed
-
-		        // Try clicking the submit button
-		        try {
-		            wait.until(ExpectedConditions.elementToBeClickable(tvs)).click();
-		        } catch (ElementClickInterceptedException e) {
-		            // Use JavaScript click as a fallback
-		            js1.executeScript("arguments[0].click();", tvs);
-		        }
-
-
-		     wait.until(ExpectedConditions.visibilityOf(name)).sendKeys(fname);
-
-		     wait.until(ExpectedConditions.visibilityOf(phone)).sendKeys(ph);
-			
-		     wait.until(ExpectedConditions.visibilityOf(mobile)).sendKeys(mob);
-		     wait.until(ExpectedConditions.visibilityOf(dob)).sendKeys(db);	 
-		     wait.until(ExpectedConditions.visibilityOf(add1)).sendKeys(add);
-			
-			
-		
-			Select sel = new Select(state);
-			sel.selectByIndex(1);
-
-			Thread.sleep(2000);
-
-			Select sel1 = new Select(district);
-			sel1.selectByVisibleText("HAPUR");
-
-			Thread.sleep(2000);
-
-			Select drop = new Select(taluk);
-			drop.selectByVisibleText("DHAULANA");
-			
-			wait.until(ExpectedConditions.visibilityOf(pincode)).sendKeys(pincde);
-		
-			
-			wait.until(ExpectedConditions.visibilityOf(date)).sendKeys(dat);	 
-			wait.until(ExpectedConditions.visibilityOf(fdate)).sendKeys(fdat);	 
-			
-			Select sel2 = new Select(pname);
-			sel2.selectByIndex(2);
-			
-			Thread.sleep(2000);
-			Select sel3 = new Select(atrack);
-			sel3.selectByIndex(1);
-			Thread.sleep(2000);
-			
-			Select sel4 = new Select(doctype);
-			sel4.selectByValue("mx_Loan_Statement_Copy");
-			
-			 // Scroll the submit button into view
-	        JavascriptExecutor js2 = (JavascriptExecutor) driver;
-	        js2.executeScript("arguments[0].scrollIntoView(true);", chfile);
-	        Thread.sleep(1000); // Just to ensure the scroll has completed
-
-			
-			try {
-	            wait.until(ExpectedConditions.visibilityOf(chfile)).sendKeys("D:\\Ramya\\Ramya Downloads\\190214.pdf");
-	            
-	        } catch (ElementClickInterceptedException e) {
-	            // Use JavaScript click as a fallback
-	            js2.executeScript("arguments[0].click();", chfile);
-	        }
-
-      
-            Thread.sleep(2000);
-            
-            
-            try {
-	            wait.until(ExpectedConditions.elementToBeClickable(cont)).click();
-	        } catch (ElementClickInterceptedException e) {
-	            // Use JavaScript click as a fallback
-	            js1.executeScript("arguments[0].click();", cont);
-	        }
-         
-			
-            wait.until(ExpectedConditions.elementToBeClickable(logout)).click();
-			
-}
-		}
