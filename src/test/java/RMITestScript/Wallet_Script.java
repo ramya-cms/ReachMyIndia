@@ -23,7 +23,7 @@ public class Wallet_Script extends BaseTest {
 	private static Logger log;
     private Login loginPage;
     private Wallet_Recharge recharge;
-    private WebDriverWait wait;
+     WebDriverWait wait;
     
     @BeforeTest
     public void setUp() throws IOException {
@@ -238,7 +238,7 @@ public class Wallet_Script extends BaseTest {
         String actualResult = "Transaction cancelled by user";
         String expectedResult = "Transaction is cancelled";
         
-        expectedResult="\"Transaction failed due to technical failure\"";
+        expectedResult="Transaction failed due to technical failure";
         
         log.debug("User clicks on Back button and clicks on Cancel Payment") ;
         

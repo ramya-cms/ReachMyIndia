@@ -15,6 +15,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -47,35 +48,43 @@ public class BaseTest implements Auto_Constant {
         String strBrowser = prop.getProperty("browser");
 
         if (strBrowser.equalsIgnoreCase("chrome")) {
+            WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
+
         } else if (strBrowser.equalsIgnoreCase("edge")) {
-           
+            WebDriverManager.edgedriver().setup();
+
             EdgeOptions options = new EdgeOptions();
             options.setPageLoadStrategy(PageLoadStrategy.EAGER);
             driver = new EdgeDriver(options);
+
+        } else if (strBrowser.equalsIgnoreCase("firefox")) {
+            WebDriverManager.firefoxdriver().setup();
+            driver = new FirefoxDriver();
+
+        } else {
+            throw new IllegalArgumentException("Unsupported browser: " + strBrowser);
         }
-       /* else
-        {
-        	driver=new FirefoxDriver();
-        	
-        }*/
+
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
         driver.get(prop.getProperty("url"));
-        
+
         PageFactory.initElements(driver, this);
 
-        // Set up Database connection
-        String dbUrl = "jdbc:sqlserver://10.9.246.163;databaseName=RMI";
+        // Set up DB connection - gracefully handle SSL error
+        String dbUrl = "jdbc:sqlserver://10.9.246.163;databaseName=RMI;encrypt=true;trustServerCertificate=true";
         String username = "sa";
         String password = "$evKum#10361";
-        
+
         try {
             connection = DriverManager.getConnection(dbUrl, username, password);
         } catch (SQLException e) {
+            System.err.println("❗ Database connection failed (proceeding without DB):");
             e.printStackTrace();
         }
     }
+
     
     public String getLoginUrl() {
         return prop.getProperty("loginUrl");

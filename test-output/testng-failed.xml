@@ -6,15 +6,15 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="RMITestScript.ReportsScript">
+      <class name="RMITestScript.Axis_Script">
         <methods>
           <include name="beforeMethod"/>
+          <include name="AxisPage"/>
           <include name="getScreenshot"/>
-          <include name="Repo"/>
           <include name="afterSuite"/>
           <include name="initialize"/>
         </methods>
-      </class> <!-- RMITestScript.ReportsScript -->
+      </class> <!-- RMITestScript.Axis_Script -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
